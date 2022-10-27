@@ -1,0 +1,48 @@
+nav {
+  width: 100%;
+}
+
+:root {
+  --color-gray: #B5B5B5;
+  --color-gray-light: #6E6E6E;
+  --color-orange-dark: #F89D24;
+  --color-orange: #F89D24;
+  --color-white: #FFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Yantramanav";
+  background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
+  color: var(--color-white);
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.container {
+  border: 1px solid #0DC;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1300px) {
+  .container {
+    width: 82vw;
+  }
+}/*# sourceMappingURL=style.css.map */
