@@ -4,7 +4,6 @@
 :root{
     --color-gray: #B5B5B5;
     --color-gray-light: #6E6E6E;
-    --color-orange-dark: #F89D24;
     --color-orange: #F89D24;
     --color-white: #FFF;
 }
@@ -22,7 +21,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    font-family: 'Yantramanav';
+    font-family: 'Yantramanav', sans-serif;
     background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
     color: var(--color-white);
 }
@@ -32,11 +31,15 @@ a{
     }
 }
 .container{
-    border: 1px solid #0DC;
     width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+h1{
+    font-size: 2.84rem; /*48px*/
+    line-height: 3.875rem; /*62px*/
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 1300px) {
