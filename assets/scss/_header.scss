@@ -1,0 +1,13 @@
+nav{
+    width: 100%;
+    img{
+        padding-top: 2.188rem; /*35px*/  
+    }
+}
+@media only screen and (min-width: 700px) {
+    nav{
+        img{
+            padding-top: 1.563rem; /*25px*/ 
+        }
+    }
+}
