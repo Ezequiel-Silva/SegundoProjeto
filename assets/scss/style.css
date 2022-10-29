@@ -1,3 +1,9 @@
+header,
+main {
+  background: linear-gradient(90deg, #1A1A1A 0%, #2C2C2C 100%);
+  width: 100%;
+}
+
 nav {
   width: 100%;
 }
@@ -26,7 +32,7 @@ nav img {
 }
 #main .main__home__title {
   margin-top: -0.4rem;
-  max-width: 33rem;
+  max-width: 46rem;
 }
 #main .main__home__subtitle {
   font-size: 0.875rem; /*14px*/
@@ -70,6 +76,11 @@ nav img {
     margin-top: 1.3rem;
   }
 }
+@media only screen and (min-width: 1024px) {
+  #main .main__home__title {
+    margin-top: 7.4rem;
+  }
+}
 :root {
   --color-gray: #B5B5B5;
   --color-gray-light: #6E6E6E;
@@ -92,7 +103,6 @@ body {
   align-items: center;
   font-size: 16px;
   font-family: "Yantramanav", sans-serif;
-  background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
   color: var(--color-white);
 }
 
@@ -105,6 +115,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 h1 {
@@ -116,5 +127,9 @@ h1 {
 @media only screen and (min-width: 1300px) {
   .container {
     width: 82vw;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 5.188rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@
     }
     .main__home__title{
         margin-top: -0.4rem;
-        max-width: 33rem;
+        max-width: 46rem;
     }
     .main__home__subtitle{
         font-size: 0.875rem; /*14px*/
@@ -53,6 +53,13 @@
             font-size: 1.25rem; /*20px*/
             margin-bottom: 3.36rem;
             margin-top: 1.3rem;
+        }
+    }
+}
+@media only screen and (min-width: 1024px){
+    #main{
+        .main__home__title{
+            margin-top: 7.4rem;
         }
     }
 }

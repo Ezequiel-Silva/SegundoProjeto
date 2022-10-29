@@ -22,7 +22,6 @@ body{
     align-items: center;
     font-size: 16px;
     font-family: 'Yantramanav', sans-serif;
-    background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
     color: var(--color-white);
 }
 a{
@@ -35,6 +34,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 h1{
     font-size: 2.84rem; /*48px*/
@@ -45,5 +45,9 @@ h1{
 @media only screen and (min-width: 1300px) {
     .container{
         width: 82vw;
+    }
+    h1{
+        font-size: 4rem;
+        line-height: 5.188rem;
     }
 }
