@@ -10,12 +10,13 @@
     }
     .main__home__title{
         margin-top: -0.4rem;
+        max-width: 33rem;
     }
     .main__home__subtitle{
         font-size: 0.875rem; /*14px*/
         font-weight: 100;
-        margin-top: 2.15rem;
-        margin-bottom: 0.25rem;
+        margin: 2.15rem auto 0.25rem auto;
+        max-width: 28rem;
     }
     .main__home__button{
         display: flex;
@@ -44,5 +45,14 @@
     }
 }
 @media only screen and (min-width: 700px) {
-
+    #main{
+        .main__home__title{
+            margin-top: 5.8rem;
+        }
+        .main__home__subtitle{
+            font-size: 1.25rem; /*20px*/
+            margin-bottom: 3.36rem;
+            margin-top: 1.3rem;
+        }
+    }
 }
