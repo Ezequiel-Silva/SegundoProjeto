@@ -8,7 +8,7 @@ nav {
   width: 100%;
 }
 nav img {
-  margin-top: 2.188rem; /*35px*/
+  margin-top: 2.188rem;
   width: 68px;
   height: 56px;
 }
@@ -16,69 +16,113 @@ nav img {
 @media only screen and (min-width: 700px) {
   nav img {
     margin-top: 1.563rem;
-    /*25px*/
     width: 110px;
     height: 90px;
   }
 }
 /*section main*/
-#main .main__home {
-  display: flex;
-  flex-direction: column;
-}
-#main .main__home__subtitle,
-#main .main__home__title {
+.main__home .main__home__subtitle,
+.main__home .main__home__title {
   text-align: center;
 }
-#main .main__home__title {
+.main__home .main__home__title {
   margin-top: -0.4rem;
   max-width: 46rem;
 }
-#main .main__home__subtitle {
-  font-size: 0.875rem; /*14px*/
+.main__home .main__home__subtitle {
+  font-size: 0.875rem;
   font-weight: 100;
   margin: 2.15rem auto 0.25rem auto;
   max-width: 28rem;
 }
-#main .main__home__button {
+.main__home .main__home__button {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 2.2rem;
 }
-#main .main__home__button__one,
-#main .main__home__button__two {
+.main__home .main__home__button__one,
+.main__home .main__home__button__two {
   border-radius: 5px;
-  font-size: 0.85rem; /*16*/
+  font-size: 0.85rem;
   text-transform: uppercase;
   color: var(--color-white);
   cursor: pointer;
-  margin: 1.92rem 0.938rem 0 0.938rem; /*35px 15px*/
+  margin: 1.92rem 0.938rem 0 0.938rem;
 }
-#main .main__home__button__one {
+.main__home .main__home__button__one {
   background-color: transparent;
   border: var(--color-white) 1px solid;
-  padding: 1.39rem 3rem; /*18px 48px*/
+  padding: 1.39rem 3rem;
 }
-#main .main__home__button__two {
+.main__home .main__home__button__two {
   border: none;
-  padding: 1.4rem 3.22rem; /*20px 52px*/
+  padding: 1.4rem 3.22rem;
   background-color: var(--color-orange);
 }
 
+.main__client .main__client__title__one,
+.main__client .main__client__title__two {
+  align-self: flex-start;
+  line-height: 3rem;
+}
+.main__client .main__client__title__one {
+  border-bottom: 1px solid var(--color-orange);
+  border-left: 1px solid var(--color-orange);
+  border-right: 1px solid var(--color-orange);
+  padding: 3.2rem 0.6rem 0rem 0.5rem;
+}
+.main__client .main__client__title__two {
+  padding: 0.8rem 0 1.2rem 0.563rem;
+}
+.main__client .main__client__text {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+.main__client .main__client__text span {
+  font-weight: bold;
+}
+.main__client .main__client__card {
+  border: 1px solid var(--color-gray-light);
+  border-radius: 5px;
+  padding: 1.5rem;
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__client .main__client__card img {
+  width: 99px;
+  height: 96px;
+}
+.main__client .main__client__card__title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  align-self: flex-start;
+  color: var(--color-orange);
+  padding-top: 1.55rem;
+}
+
 @media only screen and (min-width: 700px) {
-  #main .main__home__title {
+  .main__home .main__home__title {
     margin-top: 5.8rem;
   }
-  #main .main__home__subtitle {
-    font-size: 1.25rem; /*20px*/
+  .main__home .main__home__subtitle {
+    font-size: 1.25rem;
     margin-bottom: 3.36rem;
     margin-top: 1.3rem;
   }
+  .main__home .main__home__button {
+    margin-bottom: 7.9rem;
+  }
 }
 @media only screen and (min-width: 1024px) {
-  #main .main__home__title {
+  .main__home .main__home__title {
     margin-top: 7.4rem;
+  }
+  .main__home .main__home__button {
+    margin-bottom: 11.3rem;
   }
 }
 :root {
@@ -106,8 +150,8 @@ body {
   color: var(--color-white);
 }
 
-a:hover {
-  opacity: 0.5;
+button:hover {
+  opacity: 0.7;
 }
 
 .container {
@@ -116,11 +160,12 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  flex-direction: column;
 }
 
 h1 {
-  font-size: 2.84rem; /*48px*/
-  line-height: 3.875rem; /*62px*/
+  font-size: 2.84rem;
+  line-height: 3.875rem;
   font-weight: bold;
 }
 
