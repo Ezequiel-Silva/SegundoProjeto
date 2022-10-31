@@ -13,7 +13,6 @@
     text-transform: uppercase;
     color: var(--color-white);
     cursor: pointer;
-    // margin: 1.92rem 0.938rem 0 0.938rem;
     margin-left: 0.938rem;
     margin-right: 0.938rem;
 }
@@ -115,35 +114,73 @@
     .main__client__button{
         grid-area: buttonClient;
     }
+    .main__client__button__label{
+        display: none;
+    }
     button:last-of-type{
         margin-top: 1.92rem;
     }
 }
 
 @media only screen and (min-width: 700px) {
-    .main__home{
-        .main__home__title{
+    .main__home {
+        .main__home__title {
             margin-top: 5.8rem;
         }
-        .main__home__subtitle{
+
+        .main__home__subtitle {
             font-size: 1.25rem;
             margin-bottom: 3.36rem;
             margin-top: 1.3rem;
         }
-        .main__home__button{
+
+        .main__home__button {
             margin-bottom: 7.9rem;
         }
     }
-    .main__client{
+    .main__client {
         display: grid;
         grid-template-areas:
             "titleClient buttonClient"
             "cardClient cardClient";
-        .main__client__title__one{
+        .main__client__title__one {
             padding: 5.9rem 0.9rem 0.4rem 3.2rem;
+        }
+        .main__client__title__two {
+            padding: 0.4rem 0 1.7rem 3.2rem;
+        }
+        .main__client__title__text {
+            font-size: 1.25rem;
+            padding-left: 3.2rem;
+            width: 450px;
+            line-height: 1.625rem;
+        }
+        article{
+            margin: 5rem auto 0 auto;
+        }
+        .main__client__card {
+            margin-bottom: 2.2rem;
         }
         .main__client__button {
             align-content: flex-start;
+            justify-content: end;
+        }
+        .main__client__button__label {
+            display: flex;
+            font-size: 1rem;
+            width: 100%;
+            justify-content: end;
+            padding: 7.3rem 5.8rem 0.4rem 0;
+        }
+        .main__client__button__one {
+            padding: 1.4rem 1.3rem;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .main__client__button__two {
+            padding: 1.4rem 1.5rem;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 }
