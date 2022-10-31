@@ -139,6 +139,9 @@
         grid-template-areas:
             "titleClient buttonClient"
             "cardClient cardClient";
+        .main__client__title__one{
+            padding: 5.9rem 0.9rem 0.4rem 3.2rem;
+        }
         .main__client__button {
             align-content: flex-start;
         }
