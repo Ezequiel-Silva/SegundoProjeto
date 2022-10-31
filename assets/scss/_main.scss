@@ -49,7 +49,16 @@
     }
 }
 .main__client {
-
+    display: grid;
+    grid-template-areas:
+        "titleClient"
+        "cardClient"
+        "buttonClient";
+    .main__client__title{
+        grid-area: titleClient;
+        display: flex;
+        flex-direction: column;
+    }
     .main__client__title__one,
     .main__client__title__two {
         align-self: flex-start;
@@ -67,13 +76,16 @@
         padding: 0.8rem 0 1.2rem 0.563rem;
     }
 
-    .main__client__text {
+    .main__client__title__text {
         font-size: 1rem;
         line-height: 1.625rem;
 
         span {
             font-weight: bold;
         }
+    }
+    article{
+        grid-area: cardClient;
     }
     .main__client__card {
         border: 1px solid var(--color-gray-light);
@@ -95,6 +107,10 @@
         color: var(--color-orange);
         padding-top: 1.55rem;
     }
+    .main__client__button{
+        display: flex;
+        grid-area: buttonClient;
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -111,6 +127,12 @@
             margin-bottom: 7.9rem;
         }
     }
+    .main__client{
+        display: grid;
+        grid-template-areas:
+            "titleClient buttonClient"
+            "cardClient cardClient";
+    }
 }
 @media only screen and (min-width: 1024px){
     .main__home{
@@ -120,5 +142,11 @@
         .main__home__button{
             margin-bottom: 11.3rem;
         }
+    }
+    .main__client{
+        display: grid;
+        grid-template-areas:
+            "titleClient cardClient"
+            "buttonClient cardClient";
     }
 }

@@ -62,6 +62,15 @@ nav img {
   background-color: var(--color-orange);
 }
 
+.main__client {
+  display: grid;
+  grid-template-areas: "titleClient" "cardClient" "buttonClient";
+}
+.main__client .main__client__title {
+  grid-area: titleClient;
+  display: flex;
+  flex-direction: column;
+}
 .main__client .main__client__title__one,
 .main__client .main__client__title__two {
   align-self: flex-start;
@@ -76,12 +85,15 @@ nav img {
 .main__client .main__client__title__two {
   padding: 0.8rem 0 1.2rem 0.563rem;
 }
-.main__client .main__client__text {
+.main__client .main__client__title__text {
   font-size: 1rem;
   line-height: 1.625rem;
 }
-.main__client .main__client__text span {
+.main__client .main__client__title__text span {
   font-weight: bold;
+}
+.main__client article {
+  grid-area: cardClient;
 }
 .main__client .main__client__card {
   border: 1px solid var(--color-gray-light);
@@ -103,6 +115,10 @@ nav img {
   color: var(--color-orange);
   padding-top: 1.55rem;
 }
+.main__client .main__client__button {
+  display: flex;
+  grid-area: buttonClient;
+}
 
 @media only screen and (min-width: 700px) {
   .main__home .main__home__title {
@@ -116,6 +132,10 @@ nav img {
   .main__home .main__home__button {
     margin-bottom: 7.9rem;
   }
+  .main__client {
+    display: grid;
+    grid-template-areas: "titleClient buttonClient" "cardClient cardClient";
+  }
 }
 @media only screen and (min-width: 1024px) {
   .main__home .main__home__title {
@@ -123,6 +143,10 @@ nav img {
   }
   .main__home .main__home__button {
     margin-bottom: 11.3rem;
+  }
+  .main__client {
+    display: grid;
+    grid-template-areas: "titleClient cardClient" "buttonClient cardClient";
   }
 }
 :root {
