@@ -214,16 +214,18 @@ nav img {
     grid-template-areas: "titleClient cardClient" "buttonClient cardClient";
   }
   .main__client .main__client__title__one {
+    font-size: 4rem;
     padding: 8.4rem 0.4rem 1rem 5rem;
     margin-left: 0;
   }
   .main__client .main__client__title__two {
+    font-size: 4rem;
     padding: 0.9rem 0 2.4rem 5rem;
     margin-left: 0;
     margin-top: 0;
   }
   .main__client .main__client__title__text {
-    padding-left: 5rem;
+    padding: 0 0 1.9rem 5rem;
     width: 410px;
   }
   .main__client article {
@@ -244,7 +246,9 @@ nav img {
   }
   .main__client .main__client__button__label {
     width: 100%;
-    padding: 1.9rem 6rem 0.4rem 0;
+    padding: 0rem 0rem 0.4rem 12.7rem;
+    display: flex;
+    justify-content: start;
   }
   .main__client .main__client__button__one {
     margin-left: 0rem;
