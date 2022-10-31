@@ -114,6 +114,8 @@
     }
     .main__client__button{
         grid-area: buttonClient;
+        width: 90%;
+        margin: 0 auto;
     }
     .main__client__button__label{
         display: none;
@@ -123,7 +125,7 @@
     }
 }
 
-@media only screen and (min-width: 754px) {
+@media only screen and (min-width: 760px) {
     .main__home {
         .main__home__title {
             margin-top: 5.8rem;
@@ -199,7 +201,7 @@
             "titleClient cardClient"
             "buttonClient cardClient";
         .main__client__title__one {
-            padding: 8.4rem 0.2rem 1rem 5rem;
+            padding: 8.4rem 0.4rem 1rem 5rem;
             margin-left: 0;
         }
         .main__client__title__two {
@@ -223,14 +225,16 @@
         }
         .main__client__button{
             justify-content: start;
-            width: 455px;
+            max-width: 455px;
+            margin: 0 auto 0 5rem;
+            border: 1px solid #50B;
         }
         .main__client__button__label {
             width: 100%;
             padding: 1.9rem 6rem 0.4rem 0;
         }
         .main__client__button__one{
-            margin-left: 5rem;
+            margin-left: 0rem;
         }
         .main__client__button__two{
             margin-left: 2rem;

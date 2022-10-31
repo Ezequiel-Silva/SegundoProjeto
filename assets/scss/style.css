@@ -137,6 +137,8 @@ nav img {
 }
 .main__client .main__client__button {
   grid-area: buttonClient;
+  width: 90%;
+  margin: 0 auto;
 }
 .main__client .main__client__button__label {
   display: none;
@@ -145,7 +147,7 @@ nav img {
   margin-top: 1.92rem;
 }
 
-@media only screen and (min-width: 754px) {
+@media only screen and (min-width: 760px) {
   .main__home .main__home__title {
     margin-top: 5.8rem;
   }
@@ -212,7 +214,7 @@ nav img {
     grid-template-areas: "titleClient cardClient" "buttonClient cardClient";
   }
   .main__client .main__client__title__one {
-    padding: 8.4rem 0.2rem 1rem 5rem;
+    padding: 8.4rem 0.4rem 1rem 5rem;
     margin-left: 0;
   }
   .main__client .main__client__title__two {
@@ -236,14 +238,16 @@ nav img {
   }
   .main__client .main__client__button {
     justify-content: start;
-    width: 455px;
+    max-width: 455px;
+    margin: 0 auto 0 5rem;
+    border: 1px solid #50B;
   }
   .main__client .main__client__button__label {
     width: 100%;
     padding: 1.9rem 6rem 0.4rem 0;
   }
   .main__client .main__client__button__one {
-    margin-left: 5rem;
+    margin-left: 0rem;
   }
   .main__client .main__client__button__two {
     margin-left: 2rem;
@@ -278,7 +282,7 @@ body {
 }
 
 button:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .container {
@@ -291,7 +295,7 @@ button:hover {
 }
 
 h1 {
-  font-size: 2.84rem;
+  font-size: 2.85rem;
   line-height: 3.875rem;
   font-weight: bold;
 }
