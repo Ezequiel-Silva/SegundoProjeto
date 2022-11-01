@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/Ezequiel-Silva/SegundoProjeto#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-cssnano": "^2.1.3",
+    "gulp-clean": "^0.4.0",
     "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
     "sass": "^1.55.0"
   }
 }

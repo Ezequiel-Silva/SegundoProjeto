@@ -13,8 +13,6 @@
     text-transform: uppercase;
     color: var(--color-white);
     cursor: pointer;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
 }
 .main__home .main__home__button__one,
 .main__client .main__client__button__one {
@@ -35,7 +33,7 @@
         text-align: center;
     }
     .main__home__title {
-        margin-top: -0.4rem;
+        margin: -0.4rem auto 0 auto;
         max-width: 46rem;
     }
     .main__home__subtitle {
@@ -45,7 +43,7 @@
         max-width: 28rem;
     }
     button{
-        margin-top: 1.92rem;
+        margin: 1.92rem 0.95rem 0 0.95rem;
     }
 }
 /*section client*/
@@ -56,6 +54,7 @@
         "titleClient"
         "cardClient"
         "buttonClient";
+    background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
     .main__client__title{
         grid-area: titleClient;
         display: flex;
@@ -120,6 +119,10 @@
     .main__client__button__label{
         display: none;
     }
+    button{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
     button:last-of-type{
         margin-top: 1.92rem;
     }
@@ -128,7 +131,7 @@
 @media only screen and (min-width: 760px) {
     .main__home {
         .main__home__title {
-            margin-top: 5.8rem;
+            margin: 5.8rem auto 0 auto;
         }
 
         .main__home__subtitle {
@@ -189,7 +192,7 @@
 @media only screen and (min-width: 997px){
     .main__home{
         .main__home__title{
-            margin-top: 7.4rem;
+            margin: 7.4rem auto 0 auto;
         }
         .main__home__button{
             margin-bottom: 11.3rem;
@@ -229,7 +232,6 @@
             justify-content: start;
             max-width: 455px;
             margin: 0 auto 0 5rem;
-            border: 1px solid #50B;
         }
         .main__client__button__label {
             width: 100%;
@@ -241,7 +243,7 @@
             margin-left: 0rem;
         }
         .main__client__button__two{
-            margin-left: 2rem;
+            margin-left: 1.8rem;
         }
         button:last-of-type{
             margin-top: 0;
