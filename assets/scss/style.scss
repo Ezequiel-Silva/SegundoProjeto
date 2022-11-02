@@ -35,25 +35,28 @@ h1{
     font-weight: bold;
 }
 .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 330px;
+    width: 100%;
+    // border: 1px solid #DC4;
+    margin: 0 auto;
+    padding: 0 0.5rem;
 }
 header,
-#main .main__home,
-#main .main__client,
-#main .main__shine {
-    width: 100vw;
-    padding: 0 5.5%;
+main,
+footer {
+    width: 100%;
 }
-
 header,
 #main .main__home {
     background: linear-gradient(90deg, #1A1A1A 0%, #2C2C2C 100%);
 }
 #main .main__client {
     background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 #main .main__shine{
     background-color: #000;
@@ -63,23 +66,17 @@ header,
     height: 380px;
 }
 @media only screen and (min-width: 760px) {
-    header,
-    #main .main__home,
-    #main .main__client,
-    #main .main__shine {
-        padding: 0 5.2%;
+    .container{
+        max-width: 720px;
+        padding: 0 1rem;
     }
 }
 @media only screen and (min-width: 997px) {
-    
     h1{
         font-size: 4rem;
         line-height: 5.188rem;
     }
-    header,
-    #main .main__home,
-    #main .main__client,
-    #main .main__shine {
-        padding: 0 8.5%;
+    .container{
+        max-width: 1120px;
     }
 }

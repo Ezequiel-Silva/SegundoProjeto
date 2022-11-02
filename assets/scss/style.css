@@ -20,13 +20,12 @@ nav img {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 2.2rem;
+  padding-bottom: 2.3rem;
 }
 
 .main__home button,
 .main__client button {
   border-radius: 5px;
-  font-size: 0.73rem;
   text-transform: uppercase;
   color: var(--color-white);
   cursor: pointer;
@@ -36,13 +35,13 @@ nav img {
 .main__client .main__client__button__one {
   background-color: transparent;
   border: var(--color-white) 1px solid;
-  padding: 1.39rem 3rem;
+  padding: 1.36rem 3.03rem;
 }
 
 .main__home .main__home__button__two,
 .main__client .main__client__button__two {
   border: none;
-  padding: 1.4rem 3.22rem;
+  padding: 1.45rem 3.3rem;
   background-color: var(--color-orange);
 }
 
@@ -52,7 +51,7 @@ nav img {
   text-align: center;
 }
 .main__home .main__home__title {
-  margin: -0.4rem auto 0 auto;
+  margin: -0.54rem auto 0 auto;
   max-width: 46rem;
 }
 .main__home .main__home__subtitle {
@@ -67,7 +66,6 @@ nav img {
 
 /*section client*/
 .main__client {
-  width: 100%;
   display: grid;
   grid-template-areas: "titleClient" "cardClient" "buttonClient";
   background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
@@ -149,7 +147,8 @@ nav img {
     font-size: 0.84rem;
   }
   .main__home .main__home__title {
-    margin: 5.8rem auto 0 auto;
+    margin: 0 auto;
+    padding: 5.8rem auto 0 auto;
   }
   .main__home .main__home__subtitle {
     font-size: 1.25rem;
@@ -157,7 +156,7 @@ nav img {
     margin-top: 1.3rem;
   }
   .main__home .main__home__button {
-    margin-bottom: 7.9rem;
+    padding-bottom: 7.9rem;
   }
   .main__client {
     display: grid;
@@ -172,7 +171,6 @@ nav img {
   .main__client .main__client__title__text {
     font-size: 1.25rem;
     padding-left: 3.2rem;
-    width: 460px;
     line-height: 1.625rem;
   }
   .main__client article {
@@ -204,10 +202,10 @@ nav img {
 }
 @media only screen and (min-width: 997px) {
   .main__home .main__home__title {
-    margin: 7.4rem auto 0 auto;
+    padding: 7.4rem auto 0 auto;
   }
   .main__home .main__home__button {
-    margin-bottom: 11.3rem;
+    padding-bottom: 11.3rem;
   }
   .main__client {
     display: grid;
@@ -226,7 +224,6 @@ nav img {
   }
   .main__client .main__client__title__text {
     padding: 0 0 1.9rem 5rem;
-    width: 410px;
   }
   .main__client article {
     margin: 5rem auto 1.4rem auto;
@@ -295,18 +292,16 @@ h1 {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 330px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
 }
 
 header,
-#main .main__home,
-#main .main__client,
-#main .main__shine {
-  width: 100vw;
-  padding: 0 5.5%;
+main,
+footer {
+  width: 100%;
 }
 
 header,
@@ -316,6 +311,11 @@ header,
 
 #main .main__client {
   background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 #main .main__shine {
@@ -327,11 +327,9 @@ header,
 }
 
 @media only screen and (min-width: 760px) {
-  header,
-#main .main__home,
-#main .main__client,
-#main .main__shine {
-    padding: 0 5.2%;
+  .container {
+    max-width: 720px;
+    padding: 0 1rem;
   }
 }
 @media only screen and (min-width: 997px) {
@@ -339,10 +337,7 @@ header,
     font-size: 4rem;
     line-height: 5.188rem;
   }
-  header,
-#main .main__home,
-#main .main__client,
-#main .main__shine {
-    padding: 0 8.5%;
+  .container {
+    max-width: 1120px;
   }
 }/*# sourceMappingURL=style.css.map */
