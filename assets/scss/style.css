@@ -65,13 +65,21 @@ nav img {
 }
 
 /*section client*/
-.main__client {
+.main__client > div {
   display: grid;
   grid-template-areas: "titleClient" "cardClient" "buttonClient";
-  background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
 }
-.main__client .main__client__title {
+.main__client > div .main__client__title {
   grid-area: titleClient;
+}
+.main__client > div > article {
+  grid-area: cardClient;
+}
+.main__client > div .main__client__button {
+  grid-area: buttonClient;
+}
+
+.main__client .main__client__title {
   display: flex;
   flex-direction: column;
 }
@@ -97,10 +105,10 @@ nav img {
   font-weight: bold;
 }
 .main__client article {
-  grid-area: cardClient;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 590px;
   margin: 1rem auto 0 auto;
 }
 .main__client .main__client__card {
@@ -110,7 +118,6 @@ nav img {
   border: 1px solid var(--color-gray-light);
   border-radius: 5px;
   padding: 1.5rem;
-  width: 100%;
   max-width: 260px;
   margin: 0 auto 1rem auto;
 }
@@ -126,8 +133,6 @@ nav img {
   padding-top: 1.55rem;
 }
 .main__client .main__client__button {
-  grid-area: buttonClient;
-  width: 90%;
   margin: 0 auto;
 }
 .main__client .main__client__button__label {
@@ -146,9 +151,10 @@ nav img {
 .main__client button {
     font-size: 0.84rem;
   }
+  /*section main*/
   .main__home .main__home__title {
     margin: 0 auto;
-    padding: 5.8rem auto 0 auto;
+    padding-top: 5.8rem;
   }
   .main__home .main__home__subtitle {
     font-size: 1.25rem;
@@ -158,9 +164,12 @@ nav img {
   .main__home .main__home__button {
     padding-bottom: 7.9rem;
   }
-  .main__client {
-    display: grid;
+  /*section client*/
+  .main__client > div {
     grid-template-areas: "titleClient buttonClient" "cardClient cardClient";
+  }
+  .main__client .main__client__title {
+    max-width: 441px;
   }
   .main__client .main__client__title__one {
     padding: 5.9rem 0.9rem 0.4rem 3.2rem;
@@ -173,43 +182,18 @@ nav img {
     padding-left: 3.2rem;
     line-height: 1.625rem;
   }
-  .main__client article {
-    margin: 5rem auto 0 auto;
-  }
-  .main__client .main__client__card {
-    margin-bottom: 2.2rem;
-  }
-  .main__client .main__client__button {
-    align-content: flex-start;
-    justify-content: end;
-  }
-  .main__client .main__client__button__label {
-    display: flex;
-    font-size: 1rem;
-    justify-content: end;
-    padding: 7.3rem 5.8rem 0.4rem 3rem;
-  }
-  .main__client .main__client__button__one {
-    padding: 1.4rem 1.3rem;
-    margin-left: 3rem;
-    margin-right: 0;
-  }
-  .main__client .main__client__button__two {
-    padding: 1.4rem 1.5rem;
-    margin-left: 3rem;
-    margin-right: 0;
-  }
 }
 @media only screen and (min-width: 997px) {
+  /*section main*/
   .main__home .main__home__title {
     padding: 7.4rem auto 0 auto;
   }
   .main__home .main__home__button {
     padding-bottom: 11.3rem;
   }
-  .main__client {
-    display: grid;
-    grid-template-areas: "titleClient cardClient" "buttonClient cardClient";
+  /*section client*/
+  .main__client > div {
+    grid-template-areas: "titleClient cardClient" "buttonClient cardClient" "buttonClient cardClient";
   }
   .main__client .main__client__title__one {
     font-size: 4rem;
@@ -322,8 +306,6 @@ header,
   background-color: #000;
   background-image: url("../../image/vector.svg");
   background-repeat: repeat-x;
-  max-height: 380px;
-  height: 380px;
 }
 
 @media only screen and (min-width: 760px) {
