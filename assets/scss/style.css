@@ -51,7 +51,7 @@ nav img {
   text-align: center;
 }
 .main__home .main__home__title {
-  margin: -0.54rem auto 0 auto;
+  margin: -0.4rem auto 0 auto;
   max-width: 46rem;
 }
 .main__home .main__home__subtitle {
@@ -169,7 +169,7 @@ nav img {
     grid-template-areas: "titleClient buttonClient" "cardClient cardClient";
   }
   .main__client .main__client__title {
-    max-width: 441px;
+    width: 450px;
   }
   .main__client .main__client__title__one {
     padding: 5.9rem 0.9rem 0.4rem 3.2rem;
@@ -177,13 +177,42 @@ nav img {
   .main__client .main__client__title__two {
     padding: 0.4rem 0 1.6rem 3.2rem;
   }
+  .main__client span {
+    display: inline-block;
+  }
   .main__client .main__client__title__text {
     font-size: 1.25rem;
     padding-left: 3.2rem;
     line-height: 1.625rem;
   }
+  .main__client article {
+    margin-top: 5rem;
+    margin-bottom: 2.8rem;
+  }
+  .main__client .main__client__card {
+    margin-bottom: 2.15rem;
+  }
+  .main__client .main__client__button {
+    justify-content: start;
+    flex-direction: column;
+    /**/
+  }
+  .main__client .main__client__button__label {
+    display: flex;
+    align-self: end;
+    padding: 7.25rem 5.75rem 0.4rem 0;
+  }
+  .main__client button {
+    margin: 0;
+  }
+  .main__client .main__client__button__one {
+    padding: 1.4rem 1.3rem;
+  }
+  .main__client .main__client__button__two {
+    padding: 1.4rem 1.5rem;
+  }
 }
-@media only screen and (min-width: 997px) {
+@media only screen and (min-width: 1034px) {
   /*section main*/
   .main__home .main__home__title {
     padding: 7.4rem auto 0 auto;
@@ -210,34 +239,27 @@ nav img {
     padding: 0 0 1.9rem 5rem;
   }
   .main__client article {
-    margin: 5rem auto 1.4rem auto;
+    margin: 3.46rem auto 7.7rem auto;
   }
   .main__client .main__client__card__title {
     padding-top: 1rem;
     margin-bottom: 0rem;
   }
-  .main__client span {
-    display: block;
-  }
   .main__client .main__client__button {
-    justify-content: start;
-    max-width: 455px;
-    margin: 0 auto 0 5rem;
+    display: grid;
+    margin-bottom: 4rem;
+    grid-template-areas: ". btnLabelClient" "btnLeftClient btnRightClient";
   }
   .main__client .main__client__button__label {
-    width: 100%;
-    padding: 0rem 0rem 0.4rem 12.7rem;
-    display: flex;
-    justify-content: start;
+    grid-area: btnLabelClient;
+    padding: 0 0 0.5rem 2rem;
   }
-  .main__client .main__client__button__one {
-    margin-left: 0rem;
+  .main__client button.main__client__button__one {
+    grid-area: btnLeftClient;
   }
-  .main__client .main__client__button__two {
-    margin-left: 1.8rem;
-  }
-  .main__client button:last-of-type {
-    margin-top: 0;
+  .main__client button.main__client__button__two {
+    grid-area: btnRightClient;
+    margin: 0 0 0 2rem;
   }
 }
 :root {
@@ -314,7 +336,7 @@ header,
     padding: 0 1rem;
   }
 }
-@media only screen and (min-width: 997px) {
+@media only screen and (min-width: 1034px) {
   h1 {
     font-size: 4rem;
     line-height: 5.188rem;
