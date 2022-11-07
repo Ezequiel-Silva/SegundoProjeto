@@ -1,3 +1,4 @@
+@charset "UTF-8";
 nav {
   width: 100%;
 }
@@ -249,13 +250,23 @@ nav img {
     padding: 1.4rem 1.5rem;
   }
   /*section shine*/
-  .main__shine > div {
-    flex-direction: row;
+  .main__shine {
+    padding: 4rem 0;
+    /*Ajusta a posição do preço*/
+  }
+  .main__shine .main__shine__title {
+    max-width: 387px;
   }
   .main__shine .main__shine__price {
     right: 0;
-    bottom: auto;
+    bottom: 0;
     left: auto;
+    top: 0;
+    margin: 2.5rem 0;
+    padding: 0 2.15rem;
+  }
+  .main__shine .main__shine__price__button {
+    padding: 1.4rem 3.1rem;
   }
 }
 @media only screen and (min-width: 1034px) {
@@ -308,6 +319,10 @@ nav img {
     margin: 0 0 0 2rem;
   }
 }
+footer {
+  height: 300px;
+}
+
 :root {
   --color-gray: #B5B5B5;
   --color-gray-light: #6E6E6E;

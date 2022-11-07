@@ -238,15 +238,23 @@
         }
     }
     /*section shine*/
-    .main__shine > div{
-        flex-direction: row;
-    }
     .main__shine{
+        padding: 4rem 0;
+        .main__shine__title{
+            max-width: 387px;
+        }
         .main__shine__price{
             right: 0;
-            bottom: auto;
+            bottom: 0;
             left: auto;
+            top: 0;
+            margin: 2.5rem 0;
+            padding: 0 2.15rem;
         }
+        .main__shine__price__button{
+            padding: 1.4rem 3.1rem;
+        }
+        /*Ajusta a posição do preço*/
     }
 }
 @media only screen and (min-width: 1034px){
