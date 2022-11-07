@@ -135,7 +135,7 @@ nav img {
 .main__client .main__client__button {
   margin: 0 auto;
 }
-.main__client .main__client__button__label {
+.main__client .main__client__button__price {
   display: none;
 }
 .main__client button {
@@ -144,6 +144,44 @@ nav img {
 }
 .main__client button:last-of-type {
   margin-top: 1.92rem;
+}
+
+/*section shine*/
+.main__shine > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__shine {
+  position: relative;
+  padding: 2.2rem 0 16rem 0;
+  /* Fazendo a section shine e organizando os itens */
+}
+.main__shine .main__shine__title,
+.main__shine .main__shine__price {
+  text-align: center;
+}
+.main__shine .main__shine__price {
+  background-color: var(--color-orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem; /*48*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2.2rem 0;
+}
+.main__shine .main__shine__price__button {
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: var(--color-orange);
+  border: none;
+  padding: 1.4rem 3.6rem;
+  margin: 1.6rem 0.3rem 0 0.3rem;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 760px) {
@@ -195,9 +233,8 @@ nav img {
   .main__client .main__client__button {
     justify-content: start;
     flex-direction: column;
-    /**/
   }
-  .main__client .main__client__button__label {
+  .main__client .main__client__button__price {
     display: flex;
     align-self: end;
     padding: 7.25rem 5.75rem 0.4rem 0;
@@ -210,6 +247,15 @@ nav img {
   }
   .main__client .main__client__button__two {
     padding: 1.4rem 1.5rem;
+  }
+  /*section shine*/
+  .main__shine > div {
+    flex-direction: row;
+  }
+  .main__shine .main__shine__price {
+    right: 0;
+    bottom: auto;
+    left: auto;
   }
 }
 @media only screen and (min-width: 1034px) {
@@ -248,10 +294,10 @@ nav img {
   .main__client .main__client__button {
     display: grid;
     margin-bottom: 4rem;
-    grid-template-areas: ". btnLabelClient" "btnLeftClient btnRightClient";
+    grid-template-areas: ". btnPriceClient" "btnLeftClient btnRightClient";
   }
-  .main__client .main__client__button__label {
-    grid-area: btnLabelClient;
+  .main__client .main__client__button__price {
+    grid-area: btnPriceClient;
     padding: 0 0 0.5rem 2rem;
   }
   .main__client button.main__client__button__one {
