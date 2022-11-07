@@ -254,7 +254,7 @@ nav img {
     padding: 4rem 0;
     /*Ajusta a posição do preço*/
   }
-  .main__shine .main__shine__title {
+  .main__shine .main__shine__title h1 {
     max-width: 387px;
   }
   .main__shine .main__shine__price {
@@ -317,6 +317,21 @@ nav img {
   .main__client button.main__client__button__two {
     grid-area: btnRightClient;
     margin: 0 0 0 2rem;
+  }
+  /*section shine*/
+  .main__shine {
+    padding: 8rem 0;
+  }
+  .main__shine .main__shine__title h1 {
+    font-size: 3rem;
+    line-height: 3.891rem;
+    margin-right: 31rem;
+    max-width: 706px;
+  }
+  .main__shine .main__shine__price {
+    margin: 2.5rem 0;
+    padding: 0 6rem;
+    font-size: 4rem;
   }
 }
 footer {
