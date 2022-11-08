@@ -1,5 +1,6 @@
 .main__home .main__home__button,
-.main__client .main__client__button {
+.main__client .main__client__button,
+.main__accordion .main__accordion__button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -7,20 +8,23 @@
     padding-bottom: 2.3rem;
 }
 .main__home button,
-.main__client button {
+.main__client button,
+.main__accordion button {
     border-radius: 5px;
     text-transform: uppercase;
     color: var(--color-white);
     cursor: pointer;
 }
 .main__home .main__home__button__one,
-.main__client .main__client__button__one {
+.main__client .main__client__button__one,
+.main__accordion .main__accordion__button__one {
     background-color: transparent;
     border: var(--color-white) 1px solid;
     padding: 1.36rem 3.03rem;
 }
 .main__home .main__home__button__two,
-.main__client .main__client__button__two {
+.main__client .main__client__button__two,
+.main__accordion .main__accordion__button__two {
     border: none;
     padding: 1.45rem 3.3rem;
     background-color: var(--color-orange);
@@ -169,15 +173,17 @@
 }
 /*section accordion*/
 .main__accordion{
-    // .main__accordion__item{
-    //     width: 600px;
-    // }
     input{
         display: none;
     }
     label{
         display: flex;
         cursor: pointer;
+        background-color: var(--color-gray-light);
+        font-size: 1.25rem;
+        padding: 0.7rem 1rem;
+        display: flex;
+        justify-content: space-between;
     }
     img{
         transform: rotate(180deg);
@@ -186,12 +192,23 @@
         height: 0;
         overflow: hidden;
         transition: height 0.3s ease-in-out;
+        background-color: var(--color-gray-dark);
+        span{
+            display: none;
+        }
     }
     [id^=accordion]:checked ~ .main__accordion__item__content{
         height: auto;
+        padding: 1.5rem 2rem;
+    }
+    [id^=accordion]:checked ~ label p{
+        font-weight: bold;
     }
     [id^=accordion]:checked ~ label img{
         transform: rotate(360deg);
+    }
+    button{
+        margin-top: 2rem;
     }
 }
 

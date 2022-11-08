@@ -5,6 +5,7 @@
 :root{
     --color-gray: #B5B5B5;
     --color-gray-light: #6E6E6E;
+    --color-gray-dark: #262626;
     --color-orange: #F89D24;
     --color-white: #FFF;
 }
@@ -34,6 +35,13 @@ h1{
     font-size: 2.85rem;
     line-height: 3.875rem;
     font-weight: bold;
+}
+.square{
+    width: 6.6rem;
+    height: 6.3rem;
+    border-right: 1px solid var(--color-orange);
+    border-bottom: 1px solid var(--color-orange);
+    border-left: 1px solid var(--color-orange);
 }
 .container{
     max-width: 330px;
@@ -71,6 +79,10 @@ header,
         max-width: 720px;
         padding: 0 1rem;
     }
+    .square{
+        width: 9.5rem;
+        height: 9.4rem;
+    }
 }
 @media only screen and (min-width: 1034px) {
     h1{
@@ -79,5 +91,9 @@ header,
     }
     .container{
         max-width: 1120px;
+    }
+    .square{
+        width: 12.5rem;
+        height: 12.4rem;
     }
 }
