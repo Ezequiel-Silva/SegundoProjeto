@@ -163,8 +163,36 @@
         padding: 1.4rem 3.6rem;
         margin: 1.6rem 0.3rem 0 0.3rem;
         font-weight: bold;
+        cursor: pointer;
     }
     /* Fazendo a section shine e organizando os itens */
+}
+/*section accordion*/
+.main__accordion{
+    // .main__accordion__item{
+    //     width: 600px;
+    // }
+    input{
+        display: none;
+    }
+    label{
+        display: flex;
+        cursor: pointer;
+    }
+    img{
+        transform: rotate(180deg);
+    }
+    .main__accordion__item__content{
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+    }
+    [id^=accordion]:checked ~ .main__accordion__item__content{
+        height: auto;
+    }
+    [id^=accordion]:checked ~ label img{
+        transform: rotate(360deg);
+    }
 }
 
 @media only screen and (min-width: 760px) {
