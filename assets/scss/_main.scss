@@ -67,23 +67,21 @@
     }
 }
 .main__client {
+    position: relative;
+    .square{
+        margin-bottom: 5rem;
+    }
     .main__client__title{
         display: flex;
         flex-direction: column;
     }
-    .main__client__title__one,
-    .main__client__title__two {
-        align-self: flex-start;
-        line-height: 3rem;
-    }
     .main__client__title__one {
-        border-bottom: 1px solid var(--color-orange);
-        border-left: 1px solid var(--color-orange);
-        border-right: 1px solid var(--color-orange);
-        padding: 3.2rem 0.8rem 0rem 0.5rem;
-    }
-    .main__client__title__two {
-        padding: 0.8rem 0 1.2rem 0.563rem;
+        align-self: flex-start;
+        line-height: 3.9rem;
+        padding-left: 0.5rem;
+        position: absolute;
+        top: 2.7rem;
+        max-width: 250px;
     }
     .main__client__title__text {
         font-size: 1rem;
@@ -251,10 +249,8 @@
             width: 450px;
         }
         .main__client__title__one {
-            padding: 5.9rem 0.9rem 0.4rem 3.2rem;
-        }
-        .main__client__title__two {
-            padding: 0.4rem 0 1.6rem 3.2rem;
+            padding-left: 3.2rem;
+            top: 5.6rem;
         }
         span {
             display: inline-block;
@@ -339,16 +335,14 @@
             "buttonClient cardClient";
     }
     .main__client{
+        .square{
+            margin-bottom: 6.7rem;
+        }
         .main__client__title__one {
             font-size: 4rem;
-            padding: 8.4rem 0.4rem 1rem 5rem;
-            margin-left: 0;
-        }
-        .main__client__title__two {
-            font-size: 4rem;
-            padding: 0.9rem 0 2.4rem 5rem;
-            margin-left: 0;
-            margin-top: 0;
+            line-height: 5.3rem;
+            padding-left: 4.9rem;
+            top: 7.3rem;
         }
         .main__client__title__text {
             padding: 0 0 1.9rem 5rem;
