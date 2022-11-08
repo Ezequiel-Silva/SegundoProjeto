@@ -307,13 +307,58 @@
     }
 
     /*section accordion*/
+    .main__accordion > .container{
+        position: relative;
+    }
     .main__accordion {
+        padding: 3.8rem 0;
         .square,
         .main__accordion__title {
             display: none;
         }
-        .main__accordion__item{
-            padding-top: 3.8rem;
+        article{
+            display: flex;
+        }
+        label{
+            padding: 0;
+            img{
+                display: none;
+            }
+        }
+        label p{
+            padding: 1.67rem 1rem;
+            font-size: 2rem;
+            width: 230px;
+        }
+        .main__accordion__item__content{
+            width: calc(100% - 245px);
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            font-size: 1.25rem;
+            span{
+                display: inline;
+                font-weight: bold;
+            }
+        }
+        [id^=accordion]:checked ~ .main__accordion__item__content{
+            padding: 4rem 2rem 6.3rem 2rem;
+        }
+        .main__accordion__button{
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+        }
+        .main__accordion__button button{
+            border: none;
+            background-color: transparent;
+            font-size: 1.04rem;
+            font-weight: bold;
+            padding: 0 1rem;
+        }
+        .main__accordion__button__two{
+            color: var(--color-orange);
         }
     }
 }
@@ -393,8 +438,6 @@
 
     /*section accordion*/
     .main__accordion {
-        .main__accordion__item{
-            padding-top: 7.3rem;
-        }
+        padding: 7.3rem 0;
     }
 }

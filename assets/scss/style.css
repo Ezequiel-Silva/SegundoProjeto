@@ -318,12 +318,59 @@ nav img {
     padding: 1.4rem 3.1rem;
   }
   /*section accordion*/
+  .main__accordion > .container {
+    position: relative;
+  }
+  .main__accordion {
+    padding: 3.8rem 0;
+  }
   .main__accordion .square,
 .main__accordion .main__accordion__title {
     display: none;
   }
-  .main__accordion .main__accordion__item {
-    padding-top: 3.8rem;
+  .main__accordion article {
+    display: flex;
+  }
+  .main__accordion label {
+    padding: 0;
+  }
+  .main__accordion label img {
+    display: none;
+  }
+  .main__accordion label p {
+    padding: 1.67rem 1rem;
+    font-size: 2rem;
+    width: 230px;
+  }
+  .main__accordion .main__accordion__item__content {
+    width: calc(100% - 245px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    font-size: 1.25rem;
+  }
+  .main__accordion .main__accordion__item__content span {
+    display: inline;
+    font-weight: bold;
+  }
+  .main__accordion [id^=accordion]:checked ~ .main__accordion__item__content {
+    padding: 4rem 2rem 6.3rem 2rem;
+  }
+  .main__accordion .main__accordion__button {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  .main__accordion .main__accordion__button button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.04rem;
+    font-weight: bold;
+    padding: 0 1rem;
+  }
+  .main__accordion .main__accordion__button__two {
+    color: var(--color-orange);
   }
 }
 @media only screen and (min-width: 1034px) {
@@ -389,8 +436,8 @@ nav img {
     font-size: 4rem;
   }
   /*section accordion*/
-  .main__accordion .main__accordion__item {
-    padding-top: 7.3rem;
+  .main__accordion {
+    padding: 7.3rem 0;
   }
 }
 footer {
@@ -426,6 +473,7 @@ body {
 
 button:hover {
   opacity: 0.6;
+  transform: scale(1.1);
 }
 
 h1 {
