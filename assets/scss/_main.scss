@@ -439,5 +439,14 @@
     /*section accordion*/
     .main__accordion {
         padding: 7.3rem 0;
+        label p{
+            padding: 1.67rem 1rem;
+            text-align: center;
+            font-size: 2rem;
+            width: 460px;
+        }
+        .main__accordion__item__content{
+            width: calc(100% - 470px);
+        }
     }
 }

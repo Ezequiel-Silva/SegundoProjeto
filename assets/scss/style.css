@@ -439,6 +439,15 @@ nav img {
   .main__accordion {
     padding: 7.3rem 0;
   }
+  .main__accordion label p {
+    padding: 1.67rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+    width: 460px;
+  }
+  .main__accordion .main__accordion__item__content {
+    width: calc(100% - 470px);
+  }
 }
 footer {
   height: 300px;
