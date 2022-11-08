@@ -1,4 +1,3 @@
-@charset "UTF-8";
 nav {
   width: 100%;
 }
@@ -191,6 +190,15 @@ nav img {
 }
 
 /*section accordion*/
+.main__accordion {
+  position: relative;
+}
+.main__accordion .main__accordion__title {
+  position: absolute;
+  top: 2.66rem;
+  padding-left: 0.56rem;
+  max-width: 220px;
+}
 .main__accordion input {
   display: none;
 }
@@ -296,7 +304,6 @@ nav img {
   /*section shine*/
   .main__shine {
     padding: 4rem 0;
-    /*Ajusta a posição do preço*/
   }
   .main__shine .main__shine__title h1 {
     max-width: 387px;
@@ -311,6 +318,14 @@ nav img {
   }
   .main__shine .main__shine__price__button {
     padding: 1.4rem 3.1rem;
+  }
+  /*section accordion*/
+  .main__accordion .square,
+.main__accordion .main__accordion__title {
+    display: none;
+  }
+  .main__accordion .main__accordion__item {
+    padding-top: 3.8rem;
   }
 }
 @media only screen and (min-width: 1034px) {
@@ -377,6 +392,10 @@ nav img {
     padding: 0 6rem;
     font-size: 4rem;
   }
+  /*section accordion*/
+  .main__accordion .main__accordion__item {
+    padding-top: 7.3rem;
+  }
 }
 footer {
   height: 300px;
@@ -425,6 +444,7 @@ h1 {
   border-right: 1px solid var(--color-orange);
   border-bottom: 1px solid var(--color-orange);
   border-left: 1px solid var(--color-orange);
+  margin-bottom: 6rem;
 }
 
 .container {

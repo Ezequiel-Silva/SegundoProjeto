@@ -173,6 +173,13 @@
 }
 /*section accordion*/
 .main__accordion{
+    position: relative;
+    .main__accordion__title{
+        position: absolute;
+        top: 2.66rem;
+        padding-left: 0.56rem;
+        max-width: 220px;
+    }
     input{
         display: none;
     }
@@ -215,7 +222,7 @@
 @media only screen and (min-width: 760px) {
     .main__home button,
     .main__client button {
-        font-size:0.84rem;
+        font-size: 0.84rem;
     }
     /*section main*/
     .main__home {
@@ -232,6 +239,7 @@
             padding-bottom: 7.9rem;
         }
     }
+
     /*section client*/
     .main__client>div {
         grid-template-areas:
@@ -239,7 +247,7 @@
             "cardClient cardClient";
     }
     .main__client {
-        .main__client__title{
+        .main__client__title {
             width: 450px;
         }
         .main__client__title__one {
@@ -248,47 +256,48 @@
         .main__client__title__two {
             padding: 0.4rem 0 1.6rem 3.2rem;
         }
-        span{
+        span {
             display: inline-block;
         }
         .main__client__title__text {
             font-size: 1.25rem;
-            padding-left: 3.2rem; 
+            padding-left: 3.2rem;
             line-height: 1.625rem;
         }
-        article{
+        article {
             margin-top: 5rem;
             margin-bottom: 2.8rem;
         }
-        .main__client__card{
+        .main__client__card {
             margin-bottom: 2.15rem;
         }
-        .main__client__button{
+        .main__client__button {
             justify-content: start;
             flex-direction: column;
         }
-        .main__client__button__price{
+        .main__client__button__price {
             display: flex;
             align-self: end;
             padding: 7.25rem 5.75rem 0.4rem 0;
         }
-        button{
+        button {
             margin: 0;
         }
-        .main__client__button__one{
+        .main__client__button__one {
             padding: 1.4rem 1.3rem;
         }
-        .main__client__button__two{
+        .main__client__button__two {
             padding: 1.4rem 1.5rem;
         }
     }
+
     /*section shine*/
-    .main__shine{
+    .main__shine {
         padding: 4rem 0;
-        .main__shine__title h1{
+        .main__shine__title h1 {
             max-width: 387px;
         }
-        .main__shine__price{
+        .main__shine__price {
             right: 0;
             bottom: 0;
             left: auto;
@@ -296,10 +305,20 @@
             margin: 2.5rem 0;
             padding: 0 2.15rem;
         }
-        .main__shine__price__button{
+        .main__shine__price__button {
             padding: 1.4rem 3.1rem;
         }
-        /*Ajusta a posição do preço*/
+    }
+
+    /*section accordion*/
+    .main__accordion {
+        .square,
+        .main__accordion__title {
+            display: none;
+        }
+        .main__accordion__item{
+            padding-top: 3.8rem;
+        }
     }
 }
 @media only screen and (min-width: 1034px){
@@ -375,6 +394,13 @@
             margin: 2.5rem 0;
             padding: 0 6rem;
             font-size: 4rem;
+        }
+    }
+
+    /*section accordion*/
+    .main__accordion {
+        .main__accordion__item{
+            padding-top: 7.3rem;
         }
     }
 }
