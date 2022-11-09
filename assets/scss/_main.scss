@@ -205,6 +205,8 @@
     [id^=accordion]:checked ~ .main__accordion__item__content{
         height: auto;
         padding: 1.5rem 2rem;
+        border-top: 1px solid var(--color-orange);
+        border-bottom: 1px solid var(--color-orange);
     }
     [id^=accordion]:checked ~ label p{
         font-weight: bold;
@@ -321,6 +323,7 @@
         }
         label{
             padding: 0;
+            position: relative;
             img{
                 display: none;
             }
@@ -329,6 +332,15 @@
             padding: 1.67rem 1rem;
             font-size: 2rem;
             width: 230px;
+        }
+        label::after{
+            content: '';
+            width: 92%;
+            height: 1px;
+            background-color: var(--color-orange);
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
         .main__accordion__item__content{
             width: calc(100% - 245px);
@@ -344,7 +356,9 @@
         }
         [id^=accordion]:checked ~ .main__accordion__item__content{
             padding: 4rem 2rem 6.3rem 2rem;
+            border: none;
         }
+        
         .main__accordion__button{
             position: absolute;
             bottom: 2rem;
@@ -444,6 +458,9 @@
             text-align: center;
             font-size: 2rem;
             width: 460px;
+        }
+        label::after{
+            width: 71%;
         }
         .main__accordion__item__content{
             width: calc(100% - 470px);
