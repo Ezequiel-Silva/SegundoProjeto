@@ -325,7 +325,6 @@ nav img {
   }
   .main__accordion {
     padding: 3.8rem 0;
-    /*Trocar a visibilidade da label::after quando for pressionado*/
   }
   .main__accordion .square,
 .main__accordion .main__accordion__title {
@@ -359,7 +358,7 @@ nav img {
   .main__accordion .main__accordion__item__content {
     width: calc(100% - 245px);
     position: absolute;
-    right: 0;
+    right: 1rem;
     bottom: 0;
     top: 0;
     font-size: 1.25rem;
@@ -370,17 +369,23 @@ nav img {
     font-weight: bold;
   }
   .main__accordion [id^=accordion]:checked ~ .main__accordion__item__content {
-    padding: 4rem 2rem 6.3rem 2rem;
+    padding: 4rem 2rem 7.5rem 2rem;
     border: none;
+    overflow: auto;
   }
   .main__accordion [id^=accordion]:checked ~ label::after {
     visibility: visible;
   }
   .main__accordion .main__accordion__button {
     position: absolute;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 0;
+    right: 2.2rem;
+    left: 230px;
+    padding-right: 1rem;
+    padding-bottom: 4.2rem;
     z-index: 1;
+    background-color: var(--color-gray-dark);
+    justify-content: end;
   }
   .main__accordion .main__accordion__button button {
     border: none;
@@ -470,6 +475,10 @@ nav img {
   }
   .main__accordion .main__accordion__item__content {
     width: calc(100% - 470px);
+  }
+  .main__accordion .main__accordion__button {
+    left: 460px;
+    justify-content: center;
   }
 }
 footer {
