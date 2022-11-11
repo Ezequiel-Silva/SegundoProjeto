@@ -44,6 +44,7 @@ h1{
     border-bottom: 1px solid var(--color-orange);
     border-left: 1px solid var(--color-orange);
     margin-bottom: 6rem;
+    position: relative;
 }
 .container{
     max-width: 330px;
@@ -76,6 +77,9 @@ header,
     background-image: url("../../image/teacher_bnw.svg");
     background-size: cover;
     background-position: bottom left;
+}
+#main .main__teacher{
+    background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
 }
 @media only screen and (min-width: 760px) {
     .container{

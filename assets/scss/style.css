@@ -239,6 +239,16 @@ nav img {
   margin-top: 2rem;
 }
 
+/*section teacher*/
+.main__team .main__team__title__one {
+  position: relative;
+  top: 2.6rem;
+  left: 0.5rem;
+}
+.main__team img {
+  max-width: 267px;
+}
+
 @media only screen and (min-width: 760px) {
   .main__home button,
 .main__client button {
@@ -397,6 +407,11 @@ nav img {
   .main__accordion .main__accordion__button__two {
     color: var(--color-orange);
   }
+  /*section teacher*/
+  .main__team .main__team__title__one {
+    top: 5.4rem;
+    left: 3.2rem;
+  }
 }
 @media only screen and (min-width: 1034px) {
   /*section main*/
@@ -480,6 +495,14 @@ nav img {
     left: 460px;
     justify-content: center;
   }
+  /*section teacher*/
+  .main__team {
+    /*Criando a estrutura do team e ajeitando o titulo*/
+  }
+  .main__team .main__team__title__one {
+    top: 7.4rem;
+    left: 4.2rem;
+  }
 }
 footer {
   height: 300px;
@@ -530,6 +553,7 @@ h1 {
   border-bottom: 1px solid var(--color-orange);
   border-left: 1px solid var(--color-orange);
   margin-bottom: 6rem;
+  position: relative;
 }
 
 .container {
@@ -568,6 +592,10 @@ header,
   background-image: url("../../image/teacher_bnw.svg");
   background-size: cover;
   background-position: bottom left;
+}
+
+#main .main__teacher {
+  background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
 }
 
 @media only screen and (min-width: 760px) {

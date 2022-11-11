@@ -218,6 +218,17 @@
         margin-top: 2rem;
     }
 }
+/*section teacher*/
+.main__team{
+    .main__team__title__one{
+        position: relative;
+        top: 2.6rem;
+        left: 0.5rem;
+    }
+    img{
+        max-width: 267px;
+    }
+}
 
 @media only screen and (min-width: 760px) {
     .main__home button,
@@ -387,6 +398,14 @@
             color: var(--color-orange);
         }
     }
+
+    /*section teacher*/
+    .main__team{
+        .main__team__title__one{
+            top: 5.4rem;
+            left: 3.2rem;
+        }
+    }
 }
 @media only screen and (min-width: 1034px){
     /*section main*/
@@ -481,5 +500,14 @@
             left: 460px;
             justify-content: center;
         }
+    }
+
+    /*section teacher*/
+    .main__team{
+        .main__team__title__one{
+            top: 7.4rem;
+            left: 4.2rem;
+        }
+        /*Criando a estrutura do team e ajeitando o titulo*/
     }
 }
