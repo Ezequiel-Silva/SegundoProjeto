@@ -14,7 +14,7 @@ nav img {
     height: 90px;
   }
 }
-.main__home .main__home__button,
+.main__home .main__home__group,
 .main__client .main__client__button,
 .main__accordion .main__accordion__button {
   display: flex;
@@ -33,7 +33,7 @@ nav img {
   cursor: pointer;
 }
 
-.main__home .main__home__button__one,
+.main__home .main__home__btnOne,
 .main__client .main__client__button__one,
 .main__accordion .main__accordion__button__one {
   background-color: transparent;
@@ -41,7 +41,7 @@ nav img {
   padding: 1.36rem 3.03rem;
 }
 
-.main__home .main__home__button__two,
+.main__home .main__home__btnTwo,
 .main__client .main__client__button__two,
 .main__accordion .main__accordion__button__two {
   border: none;
@@ -264,7 +264,7 @@ nav img {
     margin-bottom: 3.36rem;
     margin-top: 1.3rem;
   }
-  .main__home .main__home__button {
+  .main__home .main__home__group {
     padding-bottom: 7.9rem;
   }
   /*section client*/
@@ -418,7 +418,7 @@ nav img {
   .main__home .main__home__title {
     padding: 7.4rem auto 0 auto;
   }
-  .main__home .main__home__button {
+  .main__home .main__home__group {
     padding-bottom: 11.3rem;
   }
   /*section client*/
