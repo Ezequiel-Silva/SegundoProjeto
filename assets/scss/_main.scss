@@ -218,15 +218,30 @@
         margin-top: 2rem;
     }
 }
-/*section teacher*/
+/*section team*/
+
 .main__team{
     .main__team__title{
         position: relative;
         top: 2.6rem;
         left: 0.5rem;
     }
+    article{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .main__team__card{
+        border-radius: 5px;
+        border: 1px solid var(--color-gray-light);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
     img{
-        max-width: 267px;
+        width: 100%;
     }
 }
 
@@ -399,11 +414,19 @@
         }
     }
 
-    /*section teacher*/
+    /*section team*/
     .main__team{
+        width: 100%;
         .main__team__title{
             top: 5.4rem;
             left: 3.2rem;
+        }
+        article{
+            justify-content: space-between;
+            margin: 0;
+        }
+        .main__team__card{
+            max-width: 333px;
         }
     }
 }
@@ -502,12 +525,14 @@
         }
     }
 
-    /*section teacher*/
+    /*section team*/
     .main__team{
         .main__team__title{
             top: 7.4rem;
             left: 4.2rem;
         }
-        /*Criando a estrutura do team e ajeitando o titulo*/
+        .main__team__card{
+            max-width: 350px;
+        }
     }
 }

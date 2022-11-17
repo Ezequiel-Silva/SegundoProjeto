@@ -16,7 +16,7 @@ nav img {
 }
 .main__home .main__home__group,
 .main__client .main__client__button,
-.main__accordion .main__accordion__button {
+.main__accordion .main__accordion__group {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -34,16 +34,16 @@ nav img {
 }
 
 .main__home .main__home__btnOne,
-.main__client .main__client__button__one,
-.main__accordion .main__accordion__button__one {
+.main__client .main__home__btnOne,
+.main__accordion .main__accordion__btnOne {
   background-color: transparent;
   border: var(--color-white) 1px solid;
   padding: 1.36rem 3.03rem;
 }
 
 .main__home .main__home__btnTwo,
-.main__client .main__client__button__two,
-.main__accordion .main__accordion__button__two {
+.main__client .main__home__btnTwo,
+.main__accordion .main__accordion__btnTwo {
   border: none;
   padding: 1.45rem 3.3rem;
   background-color: var(--color-orange);
@@ -129,7 +129,7 @@ nav img {
   width: 99px;
   height: 96px;
 }
-.main__client .main__client__card__title {
+.main__client .main__client__text {
   text-transform: uppercase;
   font-size: 1rem;
   align-self: flex-start;
@@ -139,7 +139,7 @@ nav img {
 .main__client .main__client__button {
   margin: 0 auto;
 }
-.main__client .main__client__button__price {
+.main__client .main__client__price {
   display: none;
 }
 .main__client button {
@@ -178,7 +178,7 @@ nav img {
   right: 0;
   padding: 2.2rem 0;
 }
-.main__shine .main__shine__price__button {
+.main__shine .main__shine__button {
   text-transform: uppercase;
   border-radius: 5px;
   color: var(--color-orange);
@@ -214,16 +214,16 @@ nav img {
 .main__accordion img {
   transform: rotate(180deg);
 }
-.main__accordion .main__accordion__item__content {
+.main__accordion .main__accordion__content {
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
   background-color: var(--color-gray-dark);
 }
-.main__accordion .main__accordion__item__content span {
+.main__accordion .main__accordion__content span {
   display: none;
 }
-.main__accordion [id^=accordion]:checked ~ .main__accordion__item__content {
+.main__accordion [id^=accordion]:checked ~ .main__accordion__content {
   height: auto;
   padding: 1.5rem 2rem;
   border-top: 1px solid var(--color-orange);
@@ -239,14 +239,28 @@ nav img {
   margin-top: 2rem;
 }
 
-/*section teacher*/
-.main__team .main__team__title__one {
+/*section team*/
+.main__team .main__team__title {
   position: relative;
   top: 2.6rem;
   left: 0.5rem;
 }
+.main__team article {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.main__team .main__team__card {
+  border-radius: 5px;
+  border: 1px solid var(--color-gray-light);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
 .main__team img {
-  max-width: 267px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 760px) {
@@ -297,7 +311,7 @@ nav img {
     justify-content: start;
     flex-direction: column;
   }
-  .main__client .main__client__button__price {
+  .main__client .main__client__price {
     display: flex;
     align-self: end;
     padding: 7.25rem 5.75rem 0.4rem 0;
@@ -305,10 +319,10 @@ nav img {
   .main__client button {
     margin: 0;
   }
-  .main__client .main__client__button__one {
+  .main__client .main__home__btnOne {
     padding: 1.4rem 1.3rem;
   }
-  .main__client .main__client__button__two {
+  .main__client .main__home__btnTwo {
     padding: 1.4rem 1.5rem;
   }
   /*section shine*/
@@ -326,7 +340,7 @@ nav img {
     margin: 2.5rem 0;
     padding: 0 2.15rem;
   }
-  .main__shine .main__shine__price__button {
+  .main__shine .main__shine__button {
     padding: 1.4rem 3.1rem;
   }
   /*section accordion*/
@@ -365,7 +379,7 @@ nav img {
     right: 0;
     visibility: hidden;
   }
-  .main__accordion .main__accordion__item__content {
+  .main__accordion .main__accordion__content {
     width: calc(100% - 245px);
     position: absolute;
     right: 1rem;
@@ -374,11 +388,11 @@ nav img {
     font-size: 1.25rem;
     z-index: 1;
   }
-  .main__accordion .main__accordion__item__content span {
+  .main__accordion .main__accordion__content span {
     display: inline;
     font-weight: bold;
   }
-  .main__accordion [id^=accordion]:checked ~ .main__accordion__item__content {
+  .main__accordion [id^=accordion]:checked ~ .main__accordion__content {
     padding: 4rem 2rem 7.5rem 2rem;
     border: none;
     overflow: auto;
@@ -386,7 +400,7 @@ nav img {
   .main__accordion [id^=accordion]:checked ~ label::after {
     visibility: visible;
   }
-  .main__accordion .main__accordion__button {
+  .main__accordion .main__accordion__group {
     position: absolute;
     bottom: 0;
     right: 2.2rem;
@@ -397,20 +411,30 @@ nav img {
     background-color: var(--color-gray-dark);
     justify-content: end;
   }
-  .main__accordion .main__accordion__button button {
+  .main__accordion .main__accordion__group button {
     border: none;
     background-color: transparent;
     font-size: 1.04rem;
     font-weight: bold;
     padding: 0 1rem;
   }
-  .main__accordion .main__accordion__button__two {
+  .main__accordion .main__accordion__btnTwo {
     color: var(--color-orange);
   }
-  /*section teacher*/
-  .main__team .main__team__title__one {
+  /*section team*/
+  .main__team {
+    width: 100%;
+  }
+  .main__team .main__team__title {
     top: 5.4rem;
     left: 3.2rem;
+  }
+  .main__team article {
+    justify-content: space-between;
+    margin: 0;
+  }
+  .main__team .main__team__card {
+    max-width: 333px;
   }
 }
 @media only screen and (min-width: 1034px) {
@@ -440,7 +464,7 @@ nav img {
   .main__client article {
     margin: 3.46rem auto 7.7rem auto;
   }
-  .main__client .main__client__card__title {
+  .main__client .main__client__text {
     padding-top: 1rem;
     margin-bottom: 0rem;
   }
@@ -449,14 +473,14 @@ nav img {
     margin-bottom: 4rem;
     grid-template-areas: ". btnPriceClient" "btnLeftClient btnRightClient";
   }
-  .main__client .main__client__button__price {
+  .main__client .main__client__price {
     grid-area: btnPriceClient;
     padding: 0 0 0.5rem 2rem;
   }
-  .main__client button.main__client__button__one {
+  .main__client button.main__home__btnOne {
     grid-area: btnLeftClient;
   }
-  .main__client button.main__client__button__two {
+  .main__client button.main__home__btnTwo {
     grid-area: btnRightClient;
     margin: 0 0 0 2rem;
   }
@@ -488,20 +512,20 @@ nav img {
   .main__accordion label::after {
     width: 71%;
   }
-  .main__accordion .main__accordion__item__content {
+  .main__accordion .main__accordion__content {
     width: calc(100% - 470px);
   }
-  .main__accordion .main__accordion__button {
+  .main__accordion .main__accordion__group {
     left: 460px;
     justify-content: center;
   }
-  /*section teacher*/
-  .main__team {
-    /*Criando a estrutura do team e ajeitando o titulo*/
-  }
-  .main__team .main__team__title__one {
+  /*section team*/
+  .main__team .main__team__title {
     top: 7.4rem;
     left: 4.2rem;
+  }
+  .main__team .main__team__card {
+    max-width: 350px;
   }
 }
 footer {
