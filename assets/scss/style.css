@@ -523,6 +523,9 @@ nav img {
     top: 7.4rem;
     left: 4.2rem;
   }
+  .main__team article {
+    padding-top: 4rem;
+  }
   .main__team .main__team__card {
     max-width: 350px;
   }
@@ -617,7 +620,7 @@ header,
   background-position: bottom left;
 }
 
-#main .main__teacher {
+#main .main__team {
   background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
 }
 
