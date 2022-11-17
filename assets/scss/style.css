@@ -256,7 +256,6 @@ nav img {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 100%;
 }
 .main__team img {
