@@ -16,7 +16,8 @@ nav img {
 }
 .main__home .main__home__group,
 .main__client .main__client__button,
-.main__accordion .main__accordion__group {
+.main__accordion .main__accordion__group,
+.main__team .main__team__group {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -26,7 +27,8 @@ nav img {
 
 .main__home button,
 .main__client button,
-.main__accordion button {
+.main__accordion button,
+.main__team button {
   border-radius: 5px;
   text-transform: uppercase;
   color: var(--color-white);
@@ -35,7 +37,8 @@ nav img {
 
 .main__home .main__home__btnOne,
 .main__client .main__home__btnOne,
-.main__accordion .main__accordion__btnOne {
+.main__accordion .main__accordion__btnOne,
+.main__team .main__team__btnOne {
   background-color: transparent;
   border: var(--color-white) 1px solid;
   padding: 1.36rem 3.03rem;
@@ -43,7 +46,8 @@ nav img {
 
 .main__home .main__home__btnTwo,
 .main__client .main__home__btnTwo,
-.main__accordion .main__accordion__btnTwo {
+.main__accordion .main__accordion__btnTwo,
+.main__team .main__team__btnTwo {
   border: none;
   padding: 1.45rem 3.3rem;
   background-color: var(--color-orange);
@@ -258,8 +262,22 @@ nav img {
   flex-direction: column;
   max-width: 100%;
 }
+.main__team .main__team__text {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--color-orange);
+  padding: 1.5rem 0 0.5rem 0;
+}
+.main__team .main__team__subtext {
+  padding-right: 1rem;
+}
 .main__team img {
   width: 100%;
+}
+.main__team .main__team__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 760px) {
@@ -435,6 +453,16 @@ nav img {
   .main__team .main__team__card {
     max-width: 333px;
   }
+  .main__team .main__team__subtext {
+    padding-right: 0.5rem;
+  }
+  .main__team .main__team__btnOne {
+    padding: 1.3rem;
+    margin-right: 2rem;
+  }
+  .main__team .main__team__btnTwo {
+    padding: 1.4rem 1.6rem;
+  }
 }
 @media only screen and (min-width: 1034px) {
   /*section main*/
@@ -528,6 +556,9 @@ nav img {
   }
   .main__team .main__team__card {
     max-width: 350px;
+  }
+  .main__team .main__team__subtext {
+    padding-right: 0;
   }
 }
 footer {
