@@ -229,7 +229,7 @@
     article{
         display: flex;
         flex-wrap: wrap;
-        margin: 0 auto;
+        margin: 0 auto 1.9rem auto;
     }
     .main__team__card{
         border-radius: 5px;
@@ -423,7 +423,7 @@
         }
         article{
             justify-content: space-between;
-            margin: 0;
+            margin: 0 0 1.3rem 0;
         }
         .main__team__card{
             max-width: 333px;
