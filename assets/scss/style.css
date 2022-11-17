@@ -73,7 +73,7 @@ nav img {
   display: grid;
   grid-template-areas: "titleClient" "cardClient" "buttonClient";
 }
-.main__client > div .main__client__title {
+.main__client > div .main__client__group {
   grid-area: titleClient;
 }
 .main__client > div > article {
@@ -89,11 +89,11 @@ nav img {
 .main__client .square {
   margin-bottom: 5rem;
 }
-.main__client .main__client__title {
+.main__client .main__client__group {
   display: flex;
   flex-direction: column;
 }
-.main__client .main__client__title__one {
+.main__client .main__client__title {
   align-self: flex-start;
   line-height: 3.9rem;
   padding-left: 0.5rem;
@@ -101,11 +101,11 @@ nav img {
   top: 2.7rem;
   max-width: 250px;
 }
-.main__client .main__client__title__text {
+.main__client .main__client__subtitle {
   font-size: 1rem;
   line-height: 1.35rem;
 }
-.main__client .main__client__title__text span {
+.main__client .main__client__subtitle span {
   font-weight: bold;
 }
 .main__client article {
@@ -271,17 +271,17 @@ nav img {
   .main__client > div {
     grid-template-areas: "titleClient buttonClient" "cardClient cardClient";
   }
-  .main__client .main__client__title {
+  .main__client .main__client__group {
     width: 450px;
   }
-  .main__client .main__client__title__one {
+  .main__client .main__client__title {
     padding-left: 3.2rem;
     top: 5.6rem;
   }
   .main__client span {
     display: inline-block;
   }
-  .main__client .main__client__title__text {
+  .main__client .main__client__subtitle {
     font-size: 1.25rem;
     padding-left: 3.2rem;
     line-height: 1.625rem;
@@ -428,13 +428,13 @@ nav img {
   .main__client .square {
     margin-bottom: 6.7rem;
   }
-  .main__client .main__client__title__one {
+  .main__client .main__client__title {
     font-size: 4rem;
     line-height: 5.3rem;
     padding-left: 4.9rem;
     top: 7.3rem;
   }
-  .main__client .main__client__title__text {
+  .main__client .main__client__subtitle {
     padding: 0 0 1.9rem 5rem;
   }
   .main__client article {
