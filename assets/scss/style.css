@@ -667,6 +667,14 @@ header,
   background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
 }
 
+#main .main__feedback {
+  background-image: url("../../image/opiniao.svg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border: 1px solid #C22;
+}
+
 @media only screen and (min-width: 760px) {
   .container {
     max-width: 720px;
