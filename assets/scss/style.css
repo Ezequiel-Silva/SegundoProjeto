@@ -284,6 +284,11 @@ nav img {
   margin-bottom: 1.9rem;
 }
 
+/*section feedback*/
+.main__feedback {
+  padding: 4.5rem 0 3.5rem 0;
+}
+
 @media only screen and (min-width: 760px) {
   .main__home button,
 .main__client button {
@@ -472,6 +477,31 @@ nav img {
   .main__team .main__team__btnTwo {
     padding: 1.4rem 1.6rem;
   }
+  /*section feedback*/
+  .main__feedback > div {
+    position: relative;
+  }
+  .main__feedback {
+    padding: 1.5rem 0 2.5rem 0;
+  }
+  .main__feedback .lineTop,
+.main__feedback .lineBottom {
+    height: 5rem;
+    width: 5rem;
+    border-bottom: 1px solid var(--color-orange);
+    border-left: 1px solid var(--color-orange);
+  }
+  .main__feedback .lineTop {
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+    transform: rotate(180deg);
+  }
+  .main__feedback .lineBottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
 }
 @media only screen and (min-width: 1034px) {
   /*section main*/
@@ -572,6 +602,10 @@ nav img {
   .main__team .main__team__group {
     padding: 2.5rem 0 8rem 0;
   }
+  /*section feedback*/
+  .main__feedback {
+    padding: 2rem 0 3rem 0;
+  }
 }
 footer {
   height: 300px;
@@ -671,8 +705,7 @@ header,
   background-image: url("../../image/opiniao.svg");
   background-size: cover;
   background-position: center;
-  height: 500px;
-  border: 1px solid #C22;
+  border: 1px solid #C00;
 }
 
 @media only screen and (min-width: 760px) {
