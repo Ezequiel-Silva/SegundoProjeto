@@ -233,7 +233,7 @@
     article{
         display: flex;
         flex-wrap: wrap;
-        margin: 0 auto 1.9rem auto;
+        margin: 0 auto;
     }
     .main__team__card{
         border-radius: 5px;
@@ -242,6 +242,7 @@
         display: flex;
         flex-direction: column;
         max-width: 100%;
+        margin-bottom: 1.9rem;
     }
     .main__team__text{
         text-transform: uppercase;
@@ -259,6 +260,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .main__team__btnOne{
+        margin-bottom: 1.9rem;
     }
 }
 
@@ -443,14 +447,19 @@
             margin: 0 0 1.3rem 0;
         }
         .main__team__card{
+            margin-bottom: 1.2rem;
             max-width: 333px;
         }
         .main__team__subtext{
             padding-right: 0.5rem;
         }
+        .main__team__group{
+            padding: 1.3rem 0 5rem 0;
+        }
         .main__team__btnOne{
             padding: 1.3rem;
             margin-right: 2rem;
+            margin-bottom: 0;
         }
         .main__team__btnTwo{
             padding: 1.4rem 1.6rem;
@@ -566,6 +575,9 @@
         }
         .main__team__subtext{
             padding-right: 0;
+        }
+        .main__team__group{
+            padding: 2.5rem 0 8rem 0;
         }
     }
 }
