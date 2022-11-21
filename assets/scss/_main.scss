@@ -269,12 +269,20 @@
     padding: 4.5rem 0 3.5rem 0;
     .main__feedback__item{
         display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
     }
     .main__feedback__content{
         text-align: center;
-        padding: 0 5rem;
         font-size: 3rem;
         font-weight: bold;
+    }
+    .main__feedback__name,
+    .main__feedback__description{
+        text-transform: uppercase;
+        color: var(--color-orange);
+        font-size: 1.25rem;
     }
     .main__feedback__navigation{
         display: flex;
@@ -509,6 +517,11 @@
     }
     .main__feedback {
         padding: 1.5rem 0 2.5rem 0;
+        .main__feedback__content,
+        .main__feedback__name,
+        .main__feedback__description{
+            padding: 0 5rem;
+        }
         .main__feedback__navItem:hover{
             width: 60px;
         }
@@ -525,12 +538,12 @@
         }
         .main__feedback__left{
             position: absolute;
-            left: 1rem;
+            left: 1.5rem;
             transform: rotate(50deg);
         }
         .main__feedback__right{
             position: absolute;
-            right: 1rem;
+            right: 1.5rem;
             transform: rotate(-135deg);
         }
     }
