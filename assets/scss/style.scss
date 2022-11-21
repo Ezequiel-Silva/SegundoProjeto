@@ -27,14 +27,14 @@ body{
     background-color: #000;
 }
 .main__feedback__left,
-.main__feedback__right,
-button{
+.main__feedback__right{
     &:hover{
-        opacity: 0.6;
+        border-color: var(--color-white);
     }
 }
 button{
     &:hover{
+        opacity: 0.6;
         transform: scale(1.1);
     }
 }

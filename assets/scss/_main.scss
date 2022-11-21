@@ -267,6 +267,9 @@
 /*section feedback*/
 .main__feedback{
     padding: 4.5rem 0 3.5rem 0;
+    .main__feedback__item{
+        display: none;
+    }
     .main__feedback__content{
         text-align: center;
         padding: 0 5rem;
@@ -284,14 +287,19 @@
         font-size: 1.2rem;
         min-width: 35px;
         margin: 10px 0;
+        color: var(--color-gray-light);
     }
-    .main__feedback__navItem:hover{
+    .main__feedback--white{
         color: transparent;
         height: 4px;
         width: 50px;
-        background-color: #FFF;
+        background-color: var(--color-white);
     }
-    .main__feedback__navItem:hover:not(:last-child){
+    .main__feedback__navItem:hover:not(.main__feedback--white){
+        width: 35px;
+        color: var(--color-white);
+    }
+    .main__feedback--white{
         margin-right: 20px;
     }
 }
