@@ -266,7 +266,7 @@
 }
 /*section feedback*/
 .main__feedback{
-    padding: 4.5rem 0 3.5rem 0;
+    padding: 3.7rem 0 2.7rem 0;
     .main__feedback__item{
         display: none;
         flex-direction: column;
@@ -283,6 +283,13 @@
         text-transform: uppercase;
         color: var(--color-orange);
         font-size: 1.25rem;
+        align-self: center;
+    }
+    .main__feedback__name{
+        padding-top: 1.5rem;
+    }
+    .main__feedback__description{
+        padding-bottom: 0.5rem;
     }
     .main__feedback__navigation{
         display: flex;
@@ -297,18 +304,16 @@
         margin: 10px 0;
         color: var(--color-gray-light);
     }
+    .main__feedback__navItem:hover:not(.main__feedback--white){
+        width: auto;
+        color: var(--color-white);
+    }
     .main__feedback--white{
         color: transparent;
         height: 4px;
         width: 50px;
         background-color: var(--color-white);
-    }
-    .main__feedback__navItem:hover:not(.main__feedback--white){
-        width: 35px;
-        color: var(--color-white);
-    }
-    .main__feedback--white{
-        margin-right: 20px;
+        margin-right: 25px;
     }
 }
 
@@ -516,11 +521,24 @@
         position: relative;
     }
     .main__feedback {
-        padding: 1.5rem 0 2.5rem 0;
+        padding: 6.5rem 0 5rem 0;
         .main__feedback__content,
         .main__feedback__name,
         .main__feedback__description{
             padding: 0 5rem;
+        }
+        .main__feedback__name,
+        .main__feedback__description{
+            align-self: flex-end;
+        }
+        .main__feedback__name{
+            padding-top: 2rem;
+        }
+        .main__feedback__description{
+            padding-bottom: 3.7rem;
+        }
+        .main__feedback__navItem{
+            font-size: 1.8rem;
         }
         .main__feedback__navItem:hover{
             width: 60px;
@@ -545,6 +563,12 @@
             position: absolute;
             right: 1.5rem;
             transform: rotate(-135deg);
+        }
+        .main__feedback__navItem{
+            min-width: 45px;
+        }
+        .main__feedback--white{
+            width: 60px;
         }
     }
 }
@@ -664,6 +688,9 @@
     }
     /*section feedback*/
     .main__feedback{
-        padding: 2rem 0 3rem 0;
+        padding: 12.4rem 0 11rem 0;
+        .main__feedback__name{
+            padding-top: 2.5rem;
+        }
     }
 }
