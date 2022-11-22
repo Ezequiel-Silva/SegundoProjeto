@@ -277,6 +277,7 @@
         text-align: center;
         font-size: 3rem;
         font-weight: bold;
+        padding-bottom: 1.5rem;
     }
     .main__feedback__name,
     .main__feedback__description{
@@ -285,17 +286,12 @@
         font-size: 1.25rem;
         align-self: center;
     }
-    .main__feedback__name{
-        padding-top: 1.5rem;
-    }
-    .main__feedback__description{
-        padding-bottom: 0.5rem;
-    }
     .main__feedback__navigation{
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        padding-top: 0.5rem;
     }
     .main__feedback__navItem{
         font-weight: bold;
@@ -547,11 +543,12 @@
         .main__feedback__description{
             align-self: flex-end;
         }
-        .main__feedback__name{
-            padding-top: 2rem;
+        .main__feedback__content{
+            padding-top: 3.8rem;
+            padding-bottom: 2rem;
         }
-        .main__feedback__description{
-            padding-bottom: 3.7rem;
+        .main__feedback__navigation{
+            padding: 3.8rem 0 2.5rem 0;
         }
         .main__feedback__navItem{
             font-size: 1.8rem;
@@ -705,8 +702,12 @@
     /*section feedback*/
     .main__feedback{
         padding: 3rem 0;
-        .main__feedback__name{
-            padding-top: 2.5rem;
+        .main__feedback__content{
+            padding-top: 9.2rem;
+            padding-bottom: 2.5rem;
+        }
+        .main__feedback__navigation{
+            padding: 3.7rem 0 8rem 0;
         }
     }
 }
