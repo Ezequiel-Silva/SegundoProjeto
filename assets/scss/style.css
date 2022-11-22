@@ -530,7 +530,23 @@ nav img {
     position: relative;
   }
   .main__feedback {
-    padding: 6.5rem 0 5rem 0;
+    padding: 2.5rem 0;
+  }
+  .main__feedback .lineTop,
+.main__feedback .lineBottom {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-top: 1px solid var(--color-orange);
+    border-right: 1px solid var(--color-orange);
+  }
+  .main__feedback .lineTop {
+    right: 1rem;
+  }
+  .main__feedback .lineBottom {
+    left: 1rem;
+    transform: rotate(180deg);
+    bottom: 0;
   }
   .main__feedback .main__feedback__content,
 .main__feedback .main__feedback__name,
@@ -682,7 +698,7 @@ nav img {
   }
   /*section feedback*/
   .main__feedback {
-    padding: 12.4rem 0 11rem 0;
+    padding: 3rem 0;
   }
   .main__feedback .main__feedback__name {
     padding-top: 2.5rem;
