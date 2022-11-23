@@ -356,6 +356,9 @@ nav img {
   max-width: 250px;
   padding: 0 0 1rem 0.6rem;
 }
+.main__methodology .main__methodology__subtext span {
+  font-weight: bold;
+}
 .main__methodology .main__methodology__list {
   grid-area: listMethod;
   padding-top: 2.7rem;
@@ -652,9 +655,19 @@ nav img {
     display: grid;
     grid-template-areas: "titleMethod buttonMethod" "titleMethod ." "listMethod listMethod";
   }
+  .main__methodology .main__methodology__title {
+    padding-left: 3.2rem;
+  }
   .main__methodology .main__methodology__text {
-    max-width: 300px;
+    max-width: 260px;
     padding: 0 0 1rem 0rem;
+  }
+  .main__methodology .main__methodology__list {
+    padding-top: 4.5rem;
+    padding-bottom: 2.9rem;
+  }
+  .main__methodology .main__methodology__subtext {
+    font-size: 1.25rem;
   }
   .main__methodology .main__methodology__description {
     padding: 0.9rem 0 0 0;
@@ -776,9 +789,19 @@ nav img {
     display: grid;
     grid-template-areas: "titleMethod listMethod" "titleMethod listMethod" "buttonMethod listMethod";
   }
+  .main__methodology .main__methodology__title {
+    padding-left: 5rem;
+  }
   .main__methodology .main__methodology__text {
     max-width: 320px;
     padding-bottom: 1rem;
+  }
+  .main__methodology .main__methodology__list {
+    padding-top: 2rem;
+    padding-bottom: 5.9rem;
+  }
+  .main__methodology .main__methodology__group {
+    padding-bottom: 4.1rem;
   }
 }
 footer {
