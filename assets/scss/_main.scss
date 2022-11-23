@@ -346,12 +346,24 @@
     }
     .main__methodology__item{
         padding-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .circle{
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid var(--color-orange);
+        border-radius: 50%;
+        margin-right: 0.8rem;
     }
     .main__methodology__content{
         text-transform: uppercase;
         color: var(--color-orange);
         font-size: 1rem;
-        padding-bottom: 0.6rem;
+    }
+    .main__methodology__description{
+        padding: 0.6rem 0 0 1.5rem;
     }
     .main__methodology__group{
         grid-area: buttonMethod;
@@ -638,6 +650,9 @@
         .main__methodology__text{
             max-width: 300px;
             padding: 0 0 1rem 0rem;
+        }
+        .main__methodology__description{
+            padding: 0.9rem 0 0 0;
         }
     }
 }
