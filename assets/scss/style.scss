@@ -67,6 +67,11 @@ header,
 #main .main__home {
     background: linear-gradient(90deg, #1A1A1A 0%, #2C2C2C 100%);
 }
+#main .main__client,
+#main .main__team,
+#main .main__methodology{
+    background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
+}
 #main .main__client {
     background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
     display: flex;
@@ -83,9 +88,6 @@ header,
     background-image: url("../../image/teacher_bnw.svg");
     background-size: cover;
     background-position: bottom left;
-}
-#main .main__team{
-    background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
 }
 #main .main__feedback{
     background-image: url("../../image/opiniao.svg");

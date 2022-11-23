@@ -290,7 +290,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
         padding-top: 0.5rem;
     }
     .main__feedback__navItem{
@@ -298,6 +297,7 @@
         font-size: 1.2rem;
         min-width: 35px;
         margin: 10px 0;
+        cursor: pointer;
         color: var(--color-gray-light);
     }
     .main__feedback__navItem:hover:not(.main__feedback--white){
@@ -310,6 +310,13 @@
         width: 50px;
         background-color: var(--color-white);
         margin-right: 25px;
+    }
+}
+/*section methodology*/
+.main__methodology{
+    position: relative;
+    .square{
+        position: absolute;
     }
 }
 
@@ -584,6 +591,10 @@
             width: 60px;
         }
     }
+    /*section methodology*/
+    .main__methodology{
+        //
+    }
 }
 @media only screen and (min-width: 1034px){
     /*section main*/
@@ -709,5 +720,9 @@
         .main__feedback__navigation{
             padding: 3.7rem 0 8rem 0;
         }
+    }
+    /*section methodology*/
+    .main__methodology{
+        //
     }
 }
