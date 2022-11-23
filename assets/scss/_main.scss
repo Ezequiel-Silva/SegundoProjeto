@@ -54,24 +54,24 @@
     }
 }
 /*section client*/
-.main__client > div{
-    display: grid;
-    grid-template-areas: 
-    "titleClient"
-    "cardClient"
-    "buttonClient";
-    .main__client__group{
-        grid-area: titleClient;
-    }
-    >article{
-        grid-area: cardClient;
-    }
-    .main__client__button{
-        grid-area: buttonClient;
-    }
-}
 .main__client {
     position: relative;
+    .container {
+        display: grid;
+        grid-template-areas:
+            "titleClient"
+            "cardClient"
+            "buttonClient";
+        .main__client__group {
+            grid-area: titleClient;
+        }
+        >article {
+            grid-area: cardClient;
+        }
+        .main__client__button {
+            grid-area: buttonClient;
+        }
+    }
     .square{
         margin-bottom: 5rem;
     }
@@ -137,13 +137,13 @@
     }
 }
 /*section shine*/
-.main__shine > div{
-    display: flex;
-    flex-direction: column;
-}
 .main__shine{
     position: relative;
     padding: 2.2rem 0 16rem 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
     .main__shine__title,
     .main__shine__price{
         text-align: center;
@@ -315,8 +315,25 @@
 /*section methodology*/
 .main__methodology{
     position: relative;
+    .container{
+        display: grid;
+        grid-template-areas:
+            "titleMethod"
+            "listMethod"
+            "buttonMethod";
+    }
     .square{
         position: absolute;
+    }
+    .main__methodology__title{
+        grid-area: titleMethod;
+        
+    }
+    .main__methodology__list{
+        grid-area: listMethod;
+    }
+    .main__methodology__group{
+        grid-area: buttonMethod;
     }
 }
 
@@ -340,14 +357,13 @@
             padding-bottom: 7.9rem;
         }
     }
-
     /*section client*/
-    .main__client>div {
-        grid-template-areas:
+    .main__client {
+        .container{
+            grid-template-areas:
             "titleClient buttonClient"
             "cardClient cardClient";
-    }
-    .main__client {
+        }
         .main__client__group {
             width: 450px;
         }
@@ -389,7 +405,6 @@
             padding: 1.4rem 1.5rem;
         }
     }
-
     /*section shine*/
     .main__shine {
         padding: 4rem 0;
@@ -408,13 +423,12 @@
             padding: 1.4rem 3.1rem;
         }
     }
-
     /*section accordion*/
-    .main__accordion > .container{
-        position: relative;
-    }
     .main__accordion {
         padding: 3.8rem 0;
+        .container{
+            position: relative;
+        }
         .square,
         .main__accordion__title {
             display: none;
@@ -488,7 +502,6 @@
             color: var(--color-orange);
         }
     }
-
     /*section team*/
     .main__team{
         width: 100%;
@@ -520,11 +533,11 @@
         }
     }
     /*section feedback*/
-    .main__feedback .container{
-        position: relative;
-    }
     .main__feedback {
         padding: 2.5rem 0;
+        .container{
+            position: relative;
+        }
         .lineTop,
         .lineBottom {
             width: 80px;
@@ -592,8 +605,17 @@
         }
     }
     /*section methodology*/
+    .main__methodology > div{
+        
+    }
     .main__methodology{
-        //
+        .container{
+            display: grid;
+            grid-template-areas:
+                "titleMethod buttonMethod"
+                "titleMethod ."
+                "listMethod listMethod";
+        }
     }
 }
 @media only screen and (min-width: 1034px){
@@ -607,13 +629,13 @@
         }
     }
     /*section client*/
-    .main__client>div {
-        grid-template-areas:
+    .main__client{
+        .container{
+            grid-template-areas:
             "titleClient cardClient"
             "buttonClient cardClient"
             "buttonClient cardClient";
-    }
-    .main__client{
+        }
         .square{
             margin-bottom: 6.7rem;
         }
@@ -723,6 +745,12 @@
     }
     /*section methodology*/
     .main__methodology{
-        //
+        .container{
+            display: grid;
+            grid-template-areas:
+                "titleMethod listMethod"
+                "titleMethod listMethod"
+                "buttonMethod listMethod";
+        }
     }
 }

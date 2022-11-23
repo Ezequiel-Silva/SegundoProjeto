@@ -73,22 +73,21 @@ nav img {
 }
 
 /*section client*/
-.main__client > div {
+.main__client {
+  position: relative;
+}
+.main__client .container {
   display: grid;
   grid-template-areas: "titleClient" "cardClient" "buttonClient";
 }
-.main__client > div .main__client__group {
+.main__client .container .main__client__group {
   grid-area: titleClient;
 }
-.main__client > div > article {
+.main__client .container > article {
   grid-area: cardClient;
 }
-.main__client > div .main__client__button {
+.main__client .container .main__client__button {
   grid-area: buttonClient;
-}
-
-.main__client {
-  position: relative;
 }
 .main__client .square {
   margin-bottom: 5rem;
@@ -155,15 +154,14 @@ nav img {
 }
 
 /*section shine*/
-.main__shine > div {
-  display: flex;
-  flex-direction: column;
-}
-
 .main__shine {
   position: relative;
   padding: 2.2rem 0 16rem 0;
   /* Fazendo a section shine e organizando os itens */
+}
+.main__shine .container {
+  display: flex;
+  flex-direction: column;
 }
 .main__shine .main__shine__title,
 .main__shine .main__shine__price {
@@ -337,8 +335,21 @@ nav img {
 .main__methodology {
   position: relative;
 }
+.main__methodology .container {
+  display: grid;
+  grid-template-areas: "titleMethod" "listMethod" "buttonMethod";
+}
 .main__methodology .square {
   position: absolute;
+}
+.main__methodology .main__methodology__title {
+  grid-area: titleMethod;
+}
+.main__methodology .main__methodology__list {
+  grid-area: listMethod;
+}
+.main__methodology .main__methodology__group {
+  grid-area: buttonMethod;
 }
 
 @media only screen and (min-width: 760px) {
@@ -360,7 +371,7 @@ nav img {
     padding-bottom: 7.9rem;
   }
   /*section client*/
-  .main__client > div {
+  .main__client .container {
     grid-template-areas: "titleClient buttonClient" "cardClient cardClient";
   }
   .main__client .main__client__group {
@@ -422,11 +433,11 @@ nav img {
     padding: 1.4rem 3.1rem;
   }
   /*section accordion*/
-  .main__accordion > .container {
-    position: relative;
-  }
   .main__accordion {
     padding: 3.8rem 0;
+  }
+  .main__accordion .container {
+    position: relative;
   }
   .main__accordion .square,
 .main__accordion .main__accordion__title {
@@ -530,11 +541,11 @@ nav img {
     padding: 1.4rem 1.6rem;
   }
   /*section feedback*/
-  .main__feedback .container {
-    position: relative;
-  }
   .main__feedback {
     padding: 2.5rem 0;
+  }
+  .main__feedback .container {
+    position: relative;
   }
   .main__feedback .lineTop,
 .main__feedback .lineBottom {
@@ -602,6 +613,10 @@ nav img {
     width: 60px;
   }
   /*section methodology*/
+  .main__methodology .container {
+    display: grid;
+    grid-template-areas: "titleMethod buttonMethod" "titleMethod ." "listMethod listMethod";
+  }
 }
 @media only screen and (min-width: 1034px) {
   /*section main*/
@@ -612,7 +627,7 @@ nav img {
     padding-bottom: 11.3rem;
   }
   /*section client*/
-  .main__client > div {
+  .main__client .container {
     grid-template-areas: "titleClient cardClient" "buttonClient cardClient" "buttonClient cardClient";
   }
   .main__client .square {
@@ -714,6 +729,10 @@ nav img {
     padding: 3.7rem 0 8rem 0;
   }
   /*section methodology*/
+  .main__methodology .container {
+    display: grid;
+    grid-template-areas: "titleMethod listMethod" "titleMethod listMethod" "buttonMethod listMethod";
+  }
 }
 footer {
   height: 300px;
@@ -820,7 +839,6 @@ header,
   background-image: url("../../image/opiniao.svg");
   background-size: cover;
   background-position: center;
-  border: 1px solid #C00;
 }
 
 @media only screen and (min-width: 760px) {
