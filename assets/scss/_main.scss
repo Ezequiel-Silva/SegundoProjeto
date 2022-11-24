@@ -340,6 +340,7 @@
         padding: 0 0 1rem 0.6rem;
     }
     .main__methodology__subtext{
+        padding-right: 0.9rem;
         span{
             font-weight: bold;
         }
@@ -372,6 +373,10 @@
     }
     .main__methodology__group{
         grid-area: buttonMethod;
+        padding-bottom: 0rem;
+    }
+    button{
+        margin-bottom: 2rem;
     }
 }
 
@@ -648,9 +653,9 @@
             padding-top: 5.4rem;
             display: grid;
             grid-template-areas:
-                "titleMethod buttonMethod"
-                "titleMethod ."
-                "listMethod listMethod";
+                "titleMethod titleMethod buttonMethod"
+                "titleMethod titleMethod ."
+                "listMethod listMethod listMethod";
         }
         .main__methodology__title{
             padding-left: 3.2rem;
@@ -668,6 +673,18 @@
         }
         .main__methodology__description{
             padding: 0.9rem 0 0 0;
+        }
+        .main__methodology__group{
+            padding-top: 3.5rem;
+            justify-content: end;
+        }
+        .main__methodology__btnOne{
+            padding-left: 1.3rem;
+            padding-right: 1.3rem;
+        }
+        .main__methodology__btnTwo{
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
         }
     }
 }
@@ -813,12 +830,20 @@
             max-width: 320px;
             padding-bottom: 1rem;
         }
+        .main__methodology__subtext{
+            padding-right: 15rem;
+        }
         .main__methodology__list{
             padding-top: 2rem;
             padding-bottom: 5.9rem;
         }
         .main__methodology__group{
             padding-bottom: 4.1rem;
+            justify-content: start;
+            padding-left: 5rem;
+        }
+        .main__methodology__btnOne{
+            margin-right: 2rem;
         }
     }
 }

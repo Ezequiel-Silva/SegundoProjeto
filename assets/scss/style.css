@@ -356,6 +356,9 @@ nav img {
   max-width: 250px;
   padding: 0 0 1rem 0.6rem;
 }
+.main__methodology .main__methodology__subtext {
+  padding-right: 0.9rem;
+}
 .main__methodology .main__methodology__subtext span {
   font-weight: bold;
 }
@@ -387,6 +390,10 @@ nav img {
 }
 .main__methodology .main__methodology__group {
   grid-area: buttonMethod;
+  padding-bottom: 0rem;
+}
+.main__methodology button {
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 760px) {
@@ -653,7 +660,7 @@ nav img {
   .main__methodology .container {
     padding-top: 5.4rem;
     display: grid;
-    grid-template-areas: "titleMethod buttonMethod" "titleMethod ." "listMethod listMethod";
+    grid-template-areas: "titleMethod titleMethod buttonMethod" "titleMethod titleMethod ." "listMethod listMethod listMethod";
   }
   .main__methodology .main__methodology__title {
     padding-left: 3.2rem;
@@ -671,6 +678,18 @@ nav img {
   }
   .main__methodology .main__methodology__description {
     padding: 0.9rem 0 0 0;
+  }
+  .main__methodology .main__methodology__group {
+    padding-top: 3.5rem;
+    justify-content: end;
+  }
+  .main__methodology .main__methodology__btnOne {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+  .main__methodology .main__methodology__btnTwo {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
   }
 }
 @media only screen and (min-width: 1034px) {
@@ -796,12 +815,20 @@ nav img {
     max-width: 320px;
     padding-bottom: 1rem;
   }
+  .main__methodology .main__methodology__subtext {
+    padding-right: 15rem;
+  }
   .main__methodology .main__methodology__list {
     padding-top: 2rem;
     padding-bottom: 5.9rem;
   }
   .main__methodology .main__methodology__group {
     padding-bottom: 4.1rem;
+    justify-content: start;
+    padding-left: 5rem;
+  }
+  .main__methodology .main__methodology__btnOne {
+    margin-right: 2rem;
   }
 }
 footer {
