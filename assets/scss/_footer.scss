@@ -1,3 +1,32 @@
-footer{
-    height: 300px;
+footer > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+#ftr{
+    .ftr__logo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2.5rem 0;
+    }
+    img{
+        margin: 0 1.2rem;
+    }
+    .ftr__title,
+    .ftr__group{
+        text-transform: uppercase;
+    }
+    .ftr__group{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 2.6rem;
+    }
+    .ftr__item{
+        padding: 0.2rem 1.3rem 0 1.3rem;
+    }
+}
+@media only screen and (min-width: 760px) {}
+@media only screen and (min-width: 1034px) {}
