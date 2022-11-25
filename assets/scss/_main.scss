@@ -25,7 +25,7 @@
 .main__accordion .main__accordion__btnOne,
 .main__team .main__team__btnOne,
 .main__methodology .main__methodology__btnOne,
-.main__target .main__target_btnOne {
+.main__target .main__target__btnOne {
     background-color: transparent;
     border: var(--color-white) 1px solid;
     padding: 1.36rem 3.03rem;
@@ -35,7 +35,7 @@
 .main__accordion .main__accordion__btnTwo,
 .main__team .main__team__btnTwo,
 .main__methodology .main__methodology__btnTwo,
-.main__target .main__target_btnTwo {
+.main__target .main__target__btnTwo {
     border: none;
     padding: 1.45rem 3.3rem;
     background-color: var(--color-orange);
@@ -391,10 +391,7 @@
         position: absolute;
     }
     .main__target__title{
-        padding: 0 2rem 0 0.6rem;
-    }
-    .main__target__text{
-        padding: 0 1rem 0 0;
+        padding: 2.7rem 2rem 1rem 0.6rem;
     }
     span{
         font-weight: bold;
@@ -402,8 +399,14 @@
     .main__target__group{
         padding: 2.2rem 0 1.2rem 0;
     }
+    .main__target__group{
+        padding: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     button{
-        margin: 1rem 1rem;
+        margin: 1rem 0;
     }
 }
 
@@ -413,12 +416,12 @@
         font-size: 0.84rem;
     }
     .main__methodology .main__methodology__btnOne,
-    .main__target .main__target_btnOne{
+    .main__target .main__target__btnOne{
         padding-left: 1.3rem;
         padding-right: 1.3rem;
     }
     .main__methodology .main__methodology__btnTwo,
-    .main__target .main__target_btnTwo{
+    .main__target .main__target__btnTwo{
         padding-left: 1.6rem;
         padding-right: 1.6rem;
     }
@@ -719,10 +722,10 @@
     /*section target*/
     .main__target{
         .square{
-            right: 7.2rem;
+            right: 7rem;
         }
         .main__target__title{
-            padding: 0 2rem 0 6.2rem;
+            padding: 5.4rem 2rem 0.6rem 6.2rem;
             font-size: 4rem;
         }
         .main__target__text{
@@ -730,9 +733,10 @@
             padding: 0 6rem;
         }
         .main__target__group{
-            display: flex;
-            justify-content: center;
             padding: 1.5rem 0 5rem 0;
+        }
+        .main__target__btnOne{
+            margin-right: 2rem;
         }
     }
 }
@@ -896,6 +900,9 @@
     }
     /*section target*/
     .main__target{
+        .main__target__title{
+            padding: 7.3rem 2rem 1.2rem 6.2rem;
+        }
         .main__target__group{
             padding: 3.3rem 0 15rem 5rem;
         }
