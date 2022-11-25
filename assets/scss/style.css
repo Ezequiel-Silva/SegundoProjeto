@@ -982,6 +982,12 @@ header,
   background-position: center;
 }
 
+#main .main__target {
+  background-image: url("../../image/negociando.svg");
+  background-size: cover;
+  background-position: top;
+}
+
 @media only screen and (min-width: 760px) {
   .container {
     max-width: 720px;

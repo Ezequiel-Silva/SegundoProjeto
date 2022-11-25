@@ -92,7 +92,12 @@ header,
 #main .main__feedback{
     background-image: url("../../image/opiniao.svg");
     background-size: cover;
-    background-position:  center;
+    background-position: center;
+}
+#main .main__target{
+    background-image: url("../../image/negociando.svg");
+    background-size: cover;
+    background-position: top;
 }
 @media only screen and (min-width: 760px) {
     .container{
