@@ -396,6 +396,14 @@ nav img {
   margin-bottom: 2rem;
 }
 
+/*section target*/
+.main__target .container {
+  position: relative;
+}
+.main__target .square {
+  position: absolute;
+}
+
 @media only screen and (min-width: 760px) {
   .main__home button,
 .main__client button {
@@ -691,6 +699,10 @@ nav img {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
   }
+  /*section target*/
+  .main__target .square {
+    right: 1rem;
+  }
 }
 @media only screen and (min-width: 1034px) {
   /*section main*/
@@ -830,6 +842,7 @@ nav img {
   .main__methodology .main__methodology__btnOne {
     margin-right: 2rem;
   }
+  /*section target*/
 }
 footer > .container {
   display: flex;

@@ -379,7 +379,15 @@
         margin-bottom: 2rem;
     }
 }
-
+/*section target*/
+.main__target{
+    .container{
+        position: relative;
+    }
+    .square{
+        position: absolute;
+    }
+}
 
 @media only screen and (min-width: 760px) {
     .main__home button,
@@ -688,6 +696,12 @@
             padding-right: 1.6rem;
         }
     }
+    /*section target*/
+    .main__target{
+        .square{
+            right: 1rem;
+        }
+    }
 }
 @media only screen and (min-width: 1034px){
     /*section main*/
@@ -846,5 +860,9 @@
         .main__methodology__btnOne{
             margin-right: 2rem;
         }
+    }
+    /*section target*/
+    .main__target{
+    
     }
 }
