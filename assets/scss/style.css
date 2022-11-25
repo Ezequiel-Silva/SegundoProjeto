@@ -873,6 +873,10 @@ footer > .container {
   #ftr .ftr__title,
 #ftr .ftr__group {
     text-transform: none;
+    font-size: 1.25rem;
+  }
+  #ftr .ftr__title {
+    padding-bottom: 0.15rem;
   }
 }
 :root {

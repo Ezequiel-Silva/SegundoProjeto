@@ -40,10 +40,14 @@ footer > .container{
         }
         .ftr__title,
         .ftr__group{
-            text-transform: none
+            text-transform: none;
+            font-size: 1.25rem;
+        }
+        .ftr__title{
+            padding-bottom: 0.15rem;
         }
     }
 }
 @media only screen and (min-width: 1034px) {
-    #ftr{}
+    
 }
