@@ -394,10 +394,13 @@
         padding: 0 2rem 0 0.6rem;
     }
     .main__target__text{
-        padding-right: 1rem;
+        padding: 0 1rem 0 0;
     }
     span{
         font-weight: bold;
+    }
+    .main__target__group{
+        padding: 2.2rem 0 1.2rem 0;
     }
     button{
         margin: 1rem 1rem;
@@ -729,6 +732,7 @@
         .main__target__group{
             display: flex;
             justify-content: center;
+            padding: 1.5rem 0 5rem 0;
         }
     }
 }
@@ -892,6 +896,8 @@
     }
     /*section target*/
     .main__target{
-    
+        .main__target__group{
+            padding: 3.3rem 0 15rem 5rem;
+        }
     }
 }
