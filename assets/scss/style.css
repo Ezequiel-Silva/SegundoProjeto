@@ -865,6 +865,16 @@ footer > .container {
   padding: 0.2rem 1.3rem 0 1.3rem;
 }
 
+@media only screen and (min-width: 760px) {
+  #ftr img {
+    width: 32px;
+    height: 32px;
+  }
+  #ftr .ftr__title,
+#ftr .ftr__group {
+    text-transform: none;
+  }
+}
 :root {
   --color-gray: #B5B5B5;
   --color-gray-light: #6E6E6E;
