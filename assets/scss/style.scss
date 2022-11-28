@@ -38,7 +38,13 @@ button{
         transform: scale(1.1);
     }
 }
-h1{
+h1,
+.main__client__title,
+.main__shine__title,
+.main__accordion__title,
+.main__team__title,
+.main__methodology__text,
+.main__target__title{
     font-size: 2.85rem;
     line-height: 3.875rem;
     font-weight: bold;
@@ -85,21 +91,21 @@ header,
     align-items: center;
 }
 #main .main__shine{
-    background-image: url("../../image/bg_shine.svg");
+    background-image: url("../../image/bg_shine.webp");
     background-repeat: repeat-x;
 }
 #main .main__accordion{
-    background-image: url("../../image/teacher_bnw.svg");
+    background-image: url("../../image/teacher_bnw.webp");
     background-size: cover;
     background-position: bottom left;
 }
 #main .main__feedback{
-    background-image: url("../../image/opiniao.svg");
+    background-image: url("../../image/opiniao.webp");
     background-size: cover;
     background-position: center;
 }
 #main .main__target{
-    background-image: url("../../image/negociando.svg");
+    background-image: url("../../image/negociando.webp");
     background-size: cover;
     background-position: top;
 }
