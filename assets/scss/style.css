@@ -429,7 +429,7 @@ nav img {
 
 /*section modal*/
 .main__modal {
-  background-color: #FFF;
+  background-color: #D32;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -439,18 +439,67 @@ nav img {
   max-width: 614px;
   display: flex;
   flex-direction: column;
-  margin: auto 1.3rem;
+  margin: 1.3rem;
+}
+.main__modal form {
+  padding: 0 5.5rem 2.4rem 5.5rem;
+  overflow: hidden;
 }
 .main__modal .main__modal__close {
+  color: var(--color-gray-light);
   align-self: flex-end;
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 100;
   transform: scaleX(1.5);
+  padding-right: 0.6rem;
+}
+.main__modal .main__modal__close:hover {
+  color: var(--color-white);
 }
 .main__modal .main__modal__title {
   text-transform: uppercase;
   font-size: 1.8rem;
   text-align: center;
+  color: var(--color-orange);
+}
+.main__modal .main__modal__group {
+  position: relative;
+  margin: 1.5rem 0;
+}
+.main__modal input:not([type=checkbox]) {
+  color: var(--color-orange);
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid var(--color-orange);
+  outline: 1px solid var(--color-orange);
+  border-radius: 4px;
+}
+.main__modal label {
+  color: var(--color-orange);
+  pointer-events: none;
+  border-bottom: 1px solid #ffffff;
+  left: 0;
+  bottom: 0;
+}
+.main__modal span {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1.3rem;
+  transition: all 0.3s ease;
+}
+.main__modal input:focus + label span,
+.main__modal input:valid + label span {
+  transform: translateY(-150%);
+  font-size: 0.8rem;
+  bottom: 0.2rem;
+  left: 0.2rem;
+  padding: 0 0.3rem;
+  text-shadow: 0.4px 0.4px #000;
+}
+.main__modal input:focus,
+.main__modal input:valid {
+  padding-top: 1.5rem;
 }
 
 @media only screen and (min-width: 760px) {

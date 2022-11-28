@@ -386,21 +386,38 @@
         <section class="main__modal">
             <div class="container">
                 <a href="#" class="main__modal__close">x</a>
-                <h2 class="main__modal__title">Lorem</h2>
-                <p class="main__modal__description">Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore</p>
                 <form method="post" action="">
-                    <label for="nome">Nome</label>
-                    <input id="nome" name="nome_cad" required="required" type="text" placeholder="Nome">
-                    <label for="telefone">Telefone</label>
-                    <input id="telefone" name="telefone_cad" required="required" type="tel" placeholder="Telefone">
-                    <label for="email">Email</label>
-                    <input id="email" name="email_cad" required="required" type="email" placeholder="Email">
-                    <label for="profissao">Profissão</label>
-                    <input id="profissao" name="prof_cad" required="required" type="text" placeholder="Profissão">
-                    <label for="terms">Li e aceito os os termos de uso</label>
+                    <h2 class="main__modal__title">Lorem</h2>
+                    <p class="main__modal__description">Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore</p>
+                    <div class="main__modal__group">
+                        <input id="nome" name="nome_cad" autocomplete="off" required="required" type="text">
+                        <label for="nome">
+                            <span>Nome</span>
+                        </label>
+                    </div>
+                    <div class="main__modal__group">
+                        <input id="telefone" name="telefone_cad" autocomplete="off" required="required" type="tel">
+                        <label for="telefone">
+                            <span>Telefone</span>
+                        </label>
+                    </div>
+                    <div class="main__modal__group">
+                        <input id="email" name="email_cad" autocomplete="off" required="required" type="email">
+                        <label for="email">
+                            <span>Email</span>
+                        </label> 
+                    </div>
+                    <div class="main__modal__group">            
+                        <input id="profissao" name="prof_cad" autocomplete="off" required="required" type="text">
+                        <label for="profissao">
+                            <span>Profissão</span>
+                        </label>
+                    </div> 
+
                     <input id="terms" name="terms_cad" required="required" type="checkbox">
+                    <label for="terms">Li e aceito os os termos de uso</label>
                     <input type="submit" value="Declarar interesse"/> 
                 </form>
             </div>
