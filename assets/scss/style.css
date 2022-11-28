@@ -696,6 +696,9 @@ nav img {
     width: 60px;
   }
   /*section methodology*/
+  .main__methodology {
+    order: 1;
+  }
   .main__methodology .container {
     padding-top: 5.4rem;
     display: grid;
@@ -918,6 +921,7 @@ footer > .container {
 #ftr .ftr__title {
   padding: 0 1rem 0.5rem 1rem;
   text-align: center;
+  font-weight: bold;
 }
 #ftr .ftr__group {
   display: flex;
@@ -1007,6 +1011,11 @@ header,
 main,
 footer {
   width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 header,

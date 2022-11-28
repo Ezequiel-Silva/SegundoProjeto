@@ -63,6 +63,10 @@ main,
 footer {
     width: 100%;
 }
+main{
+    display: flex;
+    flex-direction: column;
+}
 header,
 #main .main__home {
     background: linear-gradient(90deg, #1A1A1A 0%, #2C2C2C 100%);
