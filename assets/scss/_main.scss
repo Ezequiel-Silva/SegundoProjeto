@@ -424,9 +424,16 @@
         flex-direction: column;
         margin: auto 1.3rem;
     }
+    .main__modal__close{
+        align-self: flex-end;
+        font-size: 4rem;
+        font-weight: 100;
+        transform: scaleX(1.5);
+    }
     .main__modal__title{
         text-transform: uppercase;
         font-size: 1.8rem;
+        text-align: center;
     }
 }
 
