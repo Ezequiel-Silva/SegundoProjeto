@@ -44,7 +44,8 @@ h1,
 .main__accordion__title,
 .main__team__title,
 .main__methodology__text,
-.main__target__title{
+.main__target__title,
+.main__modal__title{
     font-size: 2.85rem;
     line-height: 3.875rem;
     font-weight: bold;
@@ -79,7 +80,8 @@ header,
 }
 #main .main__client,
 #main .main__team,
-#main .main__methodology{
+#main .main__methodology,
+.main__modal .container{
     background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
 }
 #main .main__client {

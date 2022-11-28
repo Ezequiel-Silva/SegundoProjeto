@@ -411,6 +411,24 @@
         margin: 1rem 0;
     }
 }
+/*section modal*/
+.main__modal{
+    background-color: #FFF;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        max-width: 614px;
+        display: flex;
+        flex-direction: column;
+        margin: auto 1.3rem;
+    }
+    .main__modal__title{
+        text-transform: uppercase;
+        font-size: 1.8rem;
+    }
+}
 
 @media only screen and (min-width: 760px) {
     .main__home button,
@@ -742,6 +760,8 @@
             margin-right: 2rem;
         }
     }
+    /*section modal*/
+    .main__modal{}
 }
 @media only screen and (min-width: 1034px){
     /*section main*/
@@ -918,4 +938,6 @@
             justify-content: end;
         }
     }
+    /*section modal*/
+    .main__modal{}
 }

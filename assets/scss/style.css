@@ -427,6 +427,25 @@ nav img {
   margin: 1rem 0;
 }
 
+/*section modal*/
+.main__modal {
+  background-color: #FFF;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__modal .container {
+  max-width: 614px;
+  display: flex;
+  flex-direction: column;
+  margin: auto 1.3rem;
+}
+.main__modal .main__modal__title {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
 @media only screen and (min-width: 760px) {
   .main__home button,
 .main__client button {
@@ -745,6 +764,7 @@ nav img {
   .main__target .main__target__btnOne {
     margin-right: 2rem;
   }
+  /*section modal*/
 }
 @media only screen and (min-width: 1034px) {
   /*section main*/
@@ -899,6 +919,7 @@ nav img {
     padding: 3.3rem 6.7rem 15rem 0rem;
     justify-content: end;
   }
+  /*section modal*/
 }
 footer > .container {
   display: flex;
@@ -992,7 +1013,8 @@ h1,
 .main__accordion__title,
 .main__team__title,
 .main__methodology__text,
-.main__target__title {
+.main__target__title,
+.main__modal__title {
   font-size: 2.85rem;
   line-height: 3.875rem;
   font-weight: bold;
@@ -1033,7 +1055,8 @@ header,
 
 #main .main__client,
 #main .main__team,
-#main .main__methodology {
+#main .main__methodology,
+.main__modal .container {
   background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
 }
 
