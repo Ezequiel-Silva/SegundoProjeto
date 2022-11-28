@@ -40,7 +40,7 @@ button{
 }
 h1,
 .main__client__title,
-.main__shine__title,
+.main__shine__title h2,
 .main__accordion__title,
 .main__team__title,
 .main__methodology__text,
@@ -120,7 +120,13 @@ header,
     }
 }
 @media only screen and (min-width: 1034px) {
-    h1{
+    h1,
+    .main__client__title,
+    .main__shine__title h2,
+    .main__accordion__title,
+    .main__team__title,
+    .main__methodology__text,
+    .main__target__title{
         font-size: 4rem;
         line-height: 5.188rem;
     }

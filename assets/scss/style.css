@@ -222,6 +222,8 @@ nav img {
 }
 .main__accordion img {
   transform: rotate(180deg);
+  height: 0.5rem;
+  margin: auto 0;
 }
 .main__accordion .main__accordion__content {
   height: 0;
@@ -501,7 +503,7 @@ nav img {
   .main__shine {
     padding: 4rem 0;
   }
-  .main__shine .main__shine__title h1 {
+  .main__shine .main__shine__title h2 {
     max-width: 387px;
   }
   .main__shine .main__shine__price {
@@ -795,7 +797,7 @@ nav img {
   .main__shine {
     padding: 8rem 0;
   }
-  .main__shine .main__shine__title h1 {
+  .main__shine .main__shine__title h2 {
     font-size: 3rem;
     line-height: 3.891rem;
     margin-right: 31rem;
@@ -986,7 +988,7 @@ button:hover {
 
 h1,
 .main__client__title,
-.main__shine__title,
+.main__shine__title h2,
 .main__accordion__title,
 .main__team__title,
 .main__methodology__text,
@@ -1078,7 +1080,13 @@ header,
   }
 }
 @media only screen and (min-width: 1034px) {
-  h1 {
+  h1,
+.main__client__title,
+.main__shine__title h2,
+.main__accordion__title,
+.main__team__title,
+.main__methodology__text,
+.main__target__title {
     font-size: 4rem;
     line-height: 5.188rem;
   }

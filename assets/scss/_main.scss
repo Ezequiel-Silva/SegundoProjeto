@@ -203,6 +203,8 @@
     }
     img{
         transform: rotate(180deg);
+        height: 0.5rem;
+        margin: auto 0;
     }
     .main__accordion__content{
         height: 0;
@@ -491,7 +493,7 @@
     /*section shine*/
     .main__shine {
         padding: 4rem 0;
-        .main__shine__title h1 {
+        .main__shine__title h2 {
             max-width: 387px;
         }
         .main__shine__price {
@@ -801,7 +803,7 @@
     .main__shine{
         padding: 8rem 0;
         .main__shine__title{
-            h1{
+            h2{
                 font-size: 3rem;
                 line-height: 3.891rem;
                 margin-right: 31rem;
