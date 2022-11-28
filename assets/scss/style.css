@@ -881,10 +881,18 @@ nav img {
   }
   /*section target*/
   .main__target .main__target__title {
-    padding: 7.3rem 2rem 1.2rem 6.2rem;
+    padding: 7.3rem 9rem 1.2rem 6.2rem;
+    max-width: 587px;
+    margin: 0 0 0 auto;
+  }
+  .main__target .main__target__text {
+    padding-left: 4rem;
+    max-width: 550px;
+    margin: 0 0 0 auto;
   }
   .main__target .main__target__group {
-    padding: 3.3rem 0 15rem 5rem;
+    padding: 3.3rem 6.7rem 15rem 0rem;
+    justify-content: end;
   }
 }
 footer > .container {
