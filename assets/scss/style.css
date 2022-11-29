@@ -453,7 +453,7 @@ nav img {
   color: var(--color-white);
 }
 .main__modal form {
-  padding: 0 5.5rem 2.4rem 5.5rem;
+  padding: 0 3.4rem 2.5rem 3.4rem;
   overflow: hidden;
 }
 .main__modal .input__modal__check,
@@ -466,6 +466,7 @@ nav img {
   font-size: 1.8rem;
   text-align: center;
   color: var(--color-orange);
+  padding-bottom: 0.6rem;
 }
 .main__modal .main__modal__group {
   position: relative;
@@ -506,8 +507,15 @@ nav img {
 .main__modal input:valid {
   padding-top: 1.5rem;
 }
-.main__modal .input__modal__check {
+.main__modal .main__modal__check {
   display: inline-block;
+  color: var(--color-white);
+}
+.main__modal .main__modal__check a {
+  color: var(--color-white);
+}
+.main__modal .main__modal__check a:hover {
+  text-decoration: underline;
 }
 .main__modal #terms {
   border: 0;
@@ -548,6 +556,7 @@ nav img {
   padding-bottom: 1.3rem;
   background-color: var(--color-orange);
   color: var(--color-white);
+  margin-top: 1.4rem;
 }
 
 @media only screen and (min-width: 760px) {

@@ -436,7 +436,7 @@
         color: var(--color-white);
     }
     form{
-        padding: 0 5.5rem 2.4rem 5.5rem;
+        padding: 0 3.4rem 2.5rem 3.4rem;
         overflow: hidden;
     }
     .input__modal__check,
@@ -449,6 +449,7 @@
         font-size: 1.8rem;
         text-align: center;
         color: var(--color-orange);
+        padding-bottom: 0.6rem;
     }
     .main__modal__group{
         position: relative;
@@ -489,8 +490,15 @@
     input:valid {
         padding-top: 1.5rem;
     }
-    .input__modal__check{
+    .main__modal__check{
         display: inline-block;
+        color: var(--color-white);
+        a{
+            color: var(--color-white);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
     }
     #terms{
         border: 0;
@@ -533,6 +541,7 @@
         padding-bottom: 1.3rem;
         background-color: var(--color-orange);
         color: var(--color-white);
+        margin-top: 1.4rem;
     }
     // https://johnywalves.com.br/input-estilizado/
 }
