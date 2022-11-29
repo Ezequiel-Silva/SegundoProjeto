@@ -385,40 +385,41 @@
 
         <section class="main__modal">
             <div class="container">
-                <a href="#" class="main__modal__close">x</a>
+                <a title="Fechar" href="#" class="main__modal__close">x</a>
                 <form method="post" action="">
                     <h2 class="main__modal__title">Lorem</h2>
                     <p class="main__modal__description">Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                         ut labore et dolore</p>
                     <div class="main__modal__group">
-                        <input id="nome" name="nome_cad" autocomplete="off" required="required" type="text">
+                        <input aria-label="Campo para preencher nome" id="nome" name="nome_cad" autocomplete="off" required="required" type="text">
                         <label for="nome">
                             <span>Nome</span>
                         </label>
                     </div>
                     <div class="main__modal__group">
-                        <input id="telefone" name="telefone_cad" autocomplete="off" required="required" type="tel">
+                        <input aria-label="Campo para preencher telefone" id="telefone" name="telefone_cad" autocomplete="off" required="required" type="tel">
                         <label for="telefone">
                             <span>Telefone</span>
                         </label>
                     </div>
                     <div class="main__modal__group">
-                        <input id="email" name="email_cad" autocomplete="off" required="required" type="email">
+                        <input aria-label="Campo para preencher email" id="email" name="email_cad" autocomplete="off" required="required" type="email">
                         <label for="email">
                             <span>Email</span>
                         </label> 
                     </div>
                     <div class="main__modal__group">            
-                        <input id="profissao" name="prof_cad" autocomplete="off" required="required" type="text">
+                        <input aria-label="Campo para preencher profissão" id="profissao" name="prof_cad" autocomplete="off" required="required" type="text">
                         <label for="profissao">
                             <span>Profissão</span>
                         </label>
                     </div> 
-
-                    <input id="terms" name="terms_cad" required="required" type="checkbox">
-                    <label for="terms">Li e aceito os os termos de uso</label>
-                    <input type="submit" value="Declarar interesse"/> 
+                    <div class="main__modal__check">
+                        <input arial-label="Termos de uso" id="terms" name="terms_cad" required="required" type="checkbox">
+                        <label for="terms">Li e aceito os os <a href="#" style="color: var(--color-white);">termos de uso</a></label>
+                    </div>
+                    <input title="Declarar interesse" class="main__modal__button" type="submit" value="Declarar interesse"/> 
                 </form>
             </div>
         </section>
