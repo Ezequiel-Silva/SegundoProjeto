@@ -413,17 +413,23 @@
 }
 /*section modal*/
 .main__modal{
-    background-color: #D32;
+    background-color: rgba(#2C2C2C, 0.95);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 2;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     .container{
         max-width: 614px;
         display: flex;
         flex-direction: column;
         margin: 1.3rem;
+        height: auto;
+        min-height: 670px;
     }
     .main__modal__close{
         color: var(--color-gray-light);
@@ -494,6 +500,7 @@
     .main__modal__check{
         display: inline-block;
         color: var(--color-white);
+        margin-top: 0.5rem;
         a{
             color: var(--color-white);
         }
@@ -555,6 +562,9 @@
 }
 @media only screen and (min-width: 378px) {
     .main__modal{
+        .main__modal__check{
+            margin-top: 0rem;
+        }
         .main__modal__terms{
             margin-right: 0;
             padding-left: 0.5rem;
