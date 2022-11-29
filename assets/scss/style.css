@@ -434,6 +434,7 @@ nav img {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .main__modal .container {
   max-width: 614px;
@@ -550,15 +551,32 @@ nav img {
   top: 0rem;
   left: 0.24rem;
 }
+.main__modal .main__modal__terms {
+  display: inline-block;
+  position: relative;
+  left: 1.5rem;
+  bottom: 2rem;
+  margin-right: 2rem;
+}
 .main__modal input.main__modal__button {
   text-transform: uppercase;
   padding-top: 1.3rem;
   padding-bottom: 1.3rem;
   background-color: var(--color-orange);
   color: var(--color-white);
-  margin-top: 1.4rem;
+  margin-top: -0.7rem;
 }
 
+@media only screen and (min-width: 378px) {
+  .main__modal .main__modal__terms {
+    margin-right: 0;
+    padding-left: 0.5rem;
+    position: static;
+  }
+  .main__modal input.main__modal__button {
+    margin-top: 1.3rem;
+  }
+}
 @media only screen and (min-width: 760px) {
   .main__home button,
 .main__client button {
