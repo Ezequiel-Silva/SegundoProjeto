@@ -21,7 +21,7 @@
     cursor: pointer;
 }
 .main__home .main__home__btnOne,
-.main__client .main__home__btnOne,
+.main__client .main__client__btnOne,
 .main__accordion .main__accordion__btnOne,
 .main__team .main__team__btnOne,
 .main__methodology .main__methodology__btnOne,
@@ -31,7 +31,7 @@
     padding: 1.36rem 3.03rem;
 }
 .main__home .main__home__btnTwo,
-.main__client .main__home__btnTwo,
+.main__client .main__client__btnTwo,
 .main__accordion .main__accordion__btnTwo,
 .main__team .main__team__btnTwo,
 .main__methodology .main__methodology__btnTwo,
@@ -483,10 +483,10 @@
         button {
             margin: 0;
         }
-        .main__home__btnOne {
+        .main__client__btnOne {
             padding: 1.4rem 1.3rem;
         }
-        .main__home__btnTwo {
+        .main__client__btnTwo {
             padding: 1.4rem 1.5rem;
         }
     }
@@ -791,10 +791,10 @@
             grid-area: btnPriceClient;
             padding: 0 0 0.5rem 2rem;
         }
-        button.main__home__btnOne{
+        button.main__client__btnOne{
             grid-area: btnLeftClient;
         }
-        button.main__home__btnTwo{
+        button.main__client__btnTwo{
             grid-area: btnRightClient;
             margin: 0 0 0 2rem;
         }

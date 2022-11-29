@@ -39,7 +39,7 @@ nav img {
 }
 
 .main__home .main__home__btnOne,
-.main__client .main__home__btnOne,
+.main__client .main__client__btnOne,
 .main__accordion .main__accordion__btnOne,
 .main__team .main__team__btnOne,
 .main__methodology .main__methodology__btnOne,
@@ -50,7 +50,7 @@ nav img {
 }
 
 .main__home .main__home__btnTwo,
-.main__client .main__home__btnTwo,
+.main__client .main__client__btnTwo,
 .main__accordion .main__accordion__btnTwo,
 .main__team .main__team__btnTwo,
 .main__methodology .main__methodology__btnTwo,
@@ -493,10 +493,10 @@ nav img {
   .main__client button {
     margin: 0;
   }
-  .main__client .main__home__btnOne {
+  .main__client .main__client__btnOne {
     padding: 1.4rem 1.3rem;
   }
-  .main__client .main__home__btnTwo {
+  .main__client .main__client__btnTwo {
     padding: 1.4rem 1.5rem;
   }
   /*section shine*/
@@ -786,10 +786,10 @@ nav img {
     grid-area: btnPriceClient;
     padding: 0 0 0.5rem 2rem;
   }
-  .main__client button.main__home__btnOne {
+  .main__client button.main__client__btnOne {
     grid-area: btnLeftClient;
   }
-  .main__client button.main__home__btnTwo {
+  .main__client button.main__client__btnTwo {
     grid-area: btnRightClient;
     margin: 0 0 0 2rem;
   }
@@ -951,7 +951,7 @@ footer > .container {
 }
 /*section modal*/
 .main__modal {
-  display: flex;
+  display: none;
   background-color: rgba(44, 44, 44, 0.95);
   position: fixed;
   width: 100%;
@@ -959,7 +959,6 @@ footer > .container {
   top: 0;
   z-index: 2;
   margin: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
 }

@@ -1,6 +1,6 @@
 /*section modal*/
 .main__modal{
-    display: flex;
+    display: none;
     background-color: rgba(#2C2C2C, 0.95);
     position: fixed;
     width: 100%;
@@ -8,7 +8,6 @@
     top: 0;
     z-index: 2;
     margin: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
     .container{
