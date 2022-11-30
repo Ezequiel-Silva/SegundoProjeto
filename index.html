@@ -392,37 +392,43 @@
                         consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                         ut labore et dolore</p>
                     <div class="main__modal__group">
-                        <input aria-label="Campo para preencher nome" id="nome" name="nome_cad" autocomplete="off" required="required" type="text">
+                        <input aria-label="Campo para preencher nome" id="nome" name="nome_cad" 
+                        autocomplete="off" required="required" type="text">
                         <label for="nome">
                             <span>Nome</span>
                         </label>
                     </div>
                     <div class="main__modal__group">
-                        <input aria-label="Campo para preencher telefone" id="telefone" name="telefone_cad" autocomplete="off" required="required" type="tel">
+                        <input aria-label="Campo para preencher telefone" id="telefone" name="telefone_cad" 
+                        autocomplete="off" required="required" type="tel"maxlength="15" onkeyup="handlePhone(event)">
                         <label for="telefone">
                             <span>Telefone</span>
                         </label>
                     </div>
                     <div class="main__modal__group">
-                        <input aria-label="Campo para preencher email" id="email" name="email_cad" autocomplete="off" required="required" type="email">
+                        <input aria-label="Campo para preencher email" id="email" name="email_cad" 
+                        autocomplete="off" required="required" type="email">
                         <label for="email">
                             <span>Email</span>
                         </label> 
                     </div>
                     <div class="main__modal__group">            
-                        <input aria-label="Campo para preencher profissão" id="profissao" name="prof_cad" autocomplete="off" required="required" type="text">
+                        <input aria-label="Campo para preencher profissão" id="profissao" name="prof_cad" 
+                        autocomplete="off" required="required" type="text">
                         <label for="profissao">
                             <span>Profissão</span>
                         </label>
                     </div> 
                     <div class="main__modal__check">
-                        <input arial-label="Termos de uso" id="terms" name="terms_cad" required="required" type="checkbox">
+                        <input arial-label="Termos de uso" id="terms" name="terms_cad" 
+                        required="required" type="checkbox">
                         <label class="main__modal__terms" for="terms">Li e aceito os <a title="Termos de uso" href="#">termos de uso</a></label>
                     </div>
                     <input title="Declarar interesse" class="main__modal__button" type="submit" value="Declarar interesse"/> 
                 </form>
             </div>
         </section>
+
     </main>
 
     <footer id="ftr">

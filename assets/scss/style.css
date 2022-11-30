@@ -1064,7 +1064,7 @@ footer > .container {
   left: 0;
 }
 .main__modal #terms::before {
-  background-color: #000;
+  background-color: #1a1a1a;
   border: 1px solid var(--color-orange);
 }
 .main__modal #terms:checked::before {
