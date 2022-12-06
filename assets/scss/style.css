@@ -60,7 +60,7 @@ nav img {
   background-color: var(--color-orange);
 }
 
-/*section main*/
+/*section home*/
 .main__home .main__home__subtitle,
 .main__home .main__home__title {
   text-align: center;
@@ -747,7 +747,7 @@ nav img {
   }
 }
 @media only screen and (min-width: 1034px) {
-  /*section main*/
+  /*section home*/
   .main__home .main__home__title {
     padding: 7.4rem auto 0 auto;
   }
