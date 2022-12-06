@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Ezequiel-Silva/SegundoProjeto#readme",
   "devDependencies": {
     "css-loader": "^6.7.2",
+    "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
     "node-sass": "^8.0.0",
     "postcss-loader": "^7.0.2",
