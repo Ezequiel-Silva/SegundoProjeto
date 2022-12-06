@@ -1,3 +1,14 @@
+import './assets/scss/style.scss';
+
+import "./image/Facebook.webp";
+import "./image/instagram.webp";
+import "./image/logo_simbolo_laranja.webp";
+import "./image/oratoria_digital_logo.webp";
+import "./image/retangulo.webp";
+import "./image/seta.webp";
+import "./image/Twitter.webp";
+import "./image/Whatsapp.webp";
+
 //Slider
 let slideIndex = 1;
 
@@ -68,4 +79,4 @@ const phoneMask = (value) => {
     return value
 }
 
-// 
+// npm run build
