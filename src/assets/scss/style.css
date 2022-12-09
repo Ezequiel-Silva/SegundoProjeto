@@ -1,0 +1,1265 @@
+nav {
+  width: 100%;
+}
+nav img {
+  margin-top: 2.188rem;
+  width: 68px;
+  height: 56px;
+}
+
+@media only screen and (min-width: 760px) {
+  nav img {
+    margin-top: 1.563rem;
+    width: 110px;
+    height: 90px;
+  }
+}
+.main__home .main__home__group,
+.main__client .main__client__button,
+.main__accordion .main__accordion__group,
+.main__team .main__team__group,
+.main__methodology .main__methodology__group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 2.3rem;
+}
+
+.main__home button,
+.main__client button,
+.main__accordion button,
+.main__team button,
+.main__methodology button,
+.main__target button {
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.main__home .main__home__btnOne,
+.main__client .main__client__btnOne,
+.main__accordion .main__accordion__btnOne,
+.main__team .main__team__btnOne,
+.main__methodology .main__methodology__btnOne,
+.main__target .main__target__btnOne {
+  background-color: transparent;
+  border: var(--color-white) 1px solid;
+  padding: 1.36rem 3.03rem;
+}
+
+.main__home .main__home__btnTwo,
+.main__client .main__client__btnTwo,
+.main__accordion .main__accordion__btnTwo,
+.main__team .main__team__btnTwo,
+.main__methodology .main__methodology__btnTwo,
+.main__target .main__target__btnTwo {
+  border: none;
+  padding: 1.45rem 3.3rem;
+  background-color: var(--color-orange);
+}
+
+/*section home*/
+.main__home .main__home__subtitle,
+.main__home .main__home__title {
+  text-align: center;
+}
+.main__home .main__home__title {
+  margin: -0.4rem auto 0 auto;
+  max-width: 46rem;
+}
+.main__home .main__home__subtitle {
+  font-size: 0.875rem;
+  font-weight: 100;
+  margin: 2.15rem auto 0.3rem auto;
+  max-width: 28rem;
+}
+.main__home button {
+  margin: 1.92rem 0.95rem 0 0.95rem;
+}
+
+/*section client*/
+.main__client {
+  position: relative;
+}
+.main__client .container {
+  display: grid;
+  grid-template-areas: "titleClient" "cardClient" "buttonClient";
+}
+.main__client .container .main__client__group {
+  grid-area: titleClient;
+}
+.main__client .container > article {
+  grid-area: cardClient;
+}
+.main__client .container .main__client__button {
+  grid-area: buttonClient;
+}
+.main__client .square {
+  margin-bottom: 5rem;
+}
+.main__client .main__client__group {
+  display: flex;
+  flex-direction: column;
+}
+.main__client .main__client__title {
+  align-self: flex-start;
+  line-height: 3.9rem;
+  padding-left: 0.5rem;
+  position: absolute;
+  top: 2.7rem;
+  max-width: 250px;
+}
+.main__client .main__client__subtitle {
+  font-size: 1rem;
+  line-height: 1.35rem;
+}
+.main__client .main__client__subtitle span {
+  font-weight: bold;
+}
+.main__client article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 590px;
+  margin: 1rem auto 0 auto;
+}
+.main__client .main__client__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--color-gray-light);
+  border-radius: 5px;
+  padding: 1.5rem;
+  max-width: 260px;
+  margin: 0 auto 1rem auto;
+}
+.main__client .main__client__card img {
+  width: 99px;
+  height: 96px;
+}
+.main__client .main__client__text {
+  text-transform: uppercase;
+  font-size: 1rem;
+  align-self: flex-start;
+  color: var(--color-orange);
+  padding-top: 1.55rem;
+}
+.main__client .main__client__button {
+  margin: 0 auto;
+}
+.main__client .main__client__price {
+  display: none;
+}
+.main__client button {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.main__client button:last-of-type {
+  margin-top: 1.92rem;
+}
+
+/*section shine*/
+.main__shine {
+  position: relative;
+  padding: 2.2rem 0 16rem 0;
+  /* Fazendo a section shine e organizando os itens */
+}
+.main__shine .container {
+  display: flex;
+  flex-direction: column;
+}
+.main__shine .main__shine__title,
+.main__shine .main__shine__price {
+  text-align: center;
+}
+.main__shine .main__shine__price {
+  background-color: var(--color-orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem; /*48*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2.2rem 0;
+}
+.main__shine .main__shine__button {
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: var(--color-orange);
+  border: none;
+  padding: 1.4rem 3.6rem;
+  margin: 1.6rem 0.3rem 0 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*section accordion*/
+.main__accordion {
+  position: relative;
+}
+.main__accordion .main__accordion__title {
+  position: absolute;
+  top: 2.66rem;
+  padding-left: 0.56rem;
+  max-width: 220px;
+}
+.main__accordion input {
+  display: none;
+}
+.main__accordion label {
+  display: flex;
+  cursor: pointer;
+  background-color: var(--color-gray-light);
+  font-size: 1.25rem;
+  padding: 0.7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main__accordion img {
+  transform: rotate(180deg);
+  height: 0.5rem;
+  margin: auto 0;
+}
+.main__accordion .main__accordion__content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  background-color: var(--color-gray-dark);
+}
+.main__accordion .main__accordion__content span {
+  display: none;
+}
+.main__accordion [id^=accordion]:checked ~ .main__accordion__content {
+  height: auto;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid var(--color-orange);
+  border-bottom: 1px solid var(--color-orange);
+}
+.main__accordion [id^=accordion]:checked ~ label p {
+  font-weight: bold;
+}
+.main__accordion [id^=accordion]:checked ~ label img {
+  transform: rotate(360deg);
+}
+.main__accordion button {
+  margin-top: 2rem;
+}
+
+/*section team*/
+.main__team .main__team__title {
+  position: relative;
+  top: 2.6rem;
+  left: 0.5rem;
+}
+.main__team article {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.main__team .main__team__card {
+  border-radius: 5px;
+  border: 1px solid var(--color-gray-light);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 1.9rem;
+}
+.main__team .main__team__text {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--color-orange);
+  padding: 1.5rem 0 0.5rem 0;
+}
+.main__team .main__team__subtext {
+  padding-right: 1rem;
+}
+.main__team img {
+  width: 100%;
+}
+.main__team .main__team__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__team .main__team__btnOne {
+  margin-bottom: 1.9rem;
+}
+
+/*section feedback*/
+.main__feedback {
+  padding: 3.7rem 0 2.7rem 0;
+}
+.main__feedback .main__feedback__item {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.main__feedback .main__feedback__content {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+.main__feedback .main__feedback__name,
+.main__feedback .main__feedback__description {
+  text-transform: uppercase;
+  color: var(--color-orange);
+  font-size: 1.25rem;
+  align-self: center;
+}
+.main__feedback .main__feedback__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+.main__feedback .main__feedback__navItem {
+  font-weight: bold;
+  font-size: 1.2rem;
+  min-width: 35px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: var(--color-gray-light);
+}
+.main__feedback .main__feedback__navItem:hover:not(.main__feedback--white) {
+  width: auto;
+  color: var(--color-white);
+}
+.main__feedback .main__feedback--white {
+  color: transparent;
+  height: 4px;
+  width: 50px;
+  background-color: var(--color-white);
+  margin-right: 25px;
+}
+
+/*section methodology*/
+.main__methodology {
+  position: relative;
+}
+.main__methodology .container {
+  padding-top: 2.7rem;
+  display: grid;
+  grid-template-areas: "titleMethod" "listMethod" "buttonMethod";
+}
+.main__methodology .square {
+  position: absolute;
+  top: 0;
+}
+.main__methodology .main__methodology__title {
+  grid-area: titleMethod;
+  padding: 0 0 0.5rem 0;
+}
+.main__methodology .main__methodology__text {
+  max-width: 250px;
+  padding: 0 0 1rem 0.6rem;
+}
+.main__methodology .main__methodology__subtext {
+  padding-right: 0.9rem;
+}
+.main__methodology .main__methodology__subtext span {
+  font-weight: bold;
+}
+.main__methodology .main__methodology__list {
+  grid-area: listMethod;
+  padding-top: 2.7rem;
+  padding-bottom: 1rem;
+}
+.main__methodology .main__methodology__item {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main__methodology .circle {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid var(--color-orange);
+  border-radius: 50%;
+  margin-right: 0.8rem;
+}
+.main__methodology .main__methodology__content {
+  text-transform: uppercase;
+  color: var(--color-orange);
+  font-size: 1rem;
+}
+.main__methodology .main__methodology__description {
+  padding: 0.6rem 0 0 1.5rem;
+}
+.main__methodology .main__methodology__group {
+  grid-area: buttonMethod;
+  padding-bottom: 0rem;
+}
+.main__methodology button {
+  margin-bottom: 2rem;
+}
+
+/*section target*/
+.main__target .container {
+  position: relative;
+}
+.main__target .square {
+  position: absolute;
+}
+.main__target .main__target__title {
+  padding: 2.7rem 2rem 1rem 0.6rem;
+}
+.main__target span {
+  font-weight: bold;
+}
+.main__target .main__target__group {
+  padding: 2.2rem 0 1.2rem 0;
+}
+.main__target .main__target__group {
+  padding: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__target button {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 760px) {
+  .main__home button,
+.main__client button {
+    font-size: 0.84rem;
+  }
+  .main__methodology .main__methodology__btnOne,
+.main__target .main__target__btnOne {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+  .main__methodology .main__methodology__btnTwo,
+.main__target .main__target__btnTwo {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+  /*section home*/
+  .main__home .main__home__title {
+    margin: 0 auto;
+    padding-top: 5.8rem;
+  }
+  .main__home .main__home__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 3.36rem;
+    margin-top: 1.3rem;
+  }
+  .main__home .main__home__group {
+    padding-bottom: 7.9rem;
+  }
+  /*section client*/
+  .main__client .container {
+    grid-template-areas: "titleClient buttonClient" "cardClient cardClient";
+  }
+  .main__client .main__client__group {
+    width: 450px;
+  }
+  .main__client .main__client__title {
+    padding-left: 3.2rem;
+    top: 5.6rem;
+  }
+  .main__client span {
+    display: inline-block;
+  }
+  .main__client .main__client__subtitle {
+    font-size: 1.25rem;
+    padding-left: 3.2rem;
+    line-height: 1.625rem;
+  }
+  .main__client article {
+    margin-top: 5rem;
+    margin-bottom: 2.8rem;
+  }
+  .main__client .main__client__card {
+    margin-bottom: 2.15rem;
+  }
+  .main__client .main__client__button {
+    justify-content: start;
+    flex-direction: column;
+  }
+  .main__client .main__client__price {
+    display: flex;
+    align-self: end;
+    padding: 7.25rem 5.75rem 0.4rem 0;
+  }
+  .main__client button {
+    margin: 0;
+  }
+  .main__client .main__client__btnOne {
+    padding: 1.4rem 1.3rem;
+  }
+  .main__client .main__client__btnTwo {
+    padding: 1.4rem 1.5rem;
+  }
+  /*section shine*/
+  .main__shine {
+    padding: 4rem 0;
+  }
+  .main__shine .main__shine__title h2 {
+    max-width: 387px;
+  }
+  .main__shine .main__shine__price {
+    right: 0;
+    bottom: 0;
+    left: auto;
+    top: 0;
+    margin: 2.5rem 0;
+    padding: 0 2.15rem;
+  }
+  .main__shine .main__shine__button {
+    padding: 1.4rem 3.1rem;
+  }
+  /*section accordion*/
+  .main__accordion {
+    padding: 3.8rem 0;
+  }
+  .main__accordion .container {
+    position: relative;
+  }
+  .main__accordion .square,
+.main__accordion .main__accordion__title {
+    display: none;
+  }
+  .main__accordion article {
+    display: flex;
+  }
+  .main__accordion label {
+    padding: 0;
+    position: relative;
+  }
+  .main__accordion label img {
+    display: none;
+  }
+  .main__accordion label p {
+    padding: 1.66rem 1rem;
+    font-size: 2rem;
+    width: 230px;
+  }
+  .main__accordion label::after {
+    content: "";
+    width: 92%;
+    height: 1px;
+    background-color: var(--color-orange);
+    position: absolute;
+    bottom: 0.01rem;
+    right: 0;
+    visibility: hidden;
+  }
+  .main__accordion .main__accordion__content {
+    width: calc(100% - 245px);
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    top: 0;
+    font-size: 1.25rem;
+    z-index: 1;
+  }
+  .main__accordion .main__accordion__content span {
+    display: inline;
+    font-weight: bold;
+  }
+  .main__accordion [id^=accordion]:checked ~ .main__accordion__content {
+    padding: 4rem 2rem 7.5rem 2rem;
+    border: none;
+    overflow: auto;
+  }
+  .main__accordion [id^=accordion]:checked ~ label::after {
+    visibility: visible;
+  }
+  .main__accordion .main__accordion__group {
+    position: absolute;
+    bottom: 0;
+    right: 2.2rem;
+    left: 230px;
+    padding-right: 1rem;
+    padding-bottom: 4.2rem;
+    z-index: 1;
+    background-color: var(--color-gray-dark);
+    justify-content: end;
+  }
+  .main__accordion .main__accordion__group button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.04rem;
+    font-weight: bold;
+    padding: 0 1rem;
+  }
+  .main__accordion .main__accordion__btnTwo {
+    color: var(--color-orange);
+  }
+  /*section team*/
+  .main__team {
+    width: 100%;
+  }
+  .main__team .main__team__title {
+    top: 5.4rem;
+    left: 3.2rem;
+  }
+  .main__team article {
+    justify-content: space-between;
+    margin: 0 0 1.3rem 0;
+  }
+  .main__team .main__team__card {
+    margin-bottom: 1.2rem;
+    max-width: 333px;
+  }
+  .main__team .main__team__subtext {
+    padding-right: 0.5rem;
+  }
+  .main__team .main__team__group {
+    padding: 1.3rem 0 5rem 0;
+  }
+  .main__team .main__team__btnOne {
+    padding: 1.3rem;
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+  .main__team .main__team__btnTwo {
+    padding: 1.4rem 1.6rem;
+  }
+  /*section feedback*/
+  .main__feedback {
+    padding: 2.5rem 0;
+  }
+  .main__feedback .container {
+    position: relative;
+  }
+  .main__feedback .lineTop,
+.main__feedback .lineBottom {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-top: 1px solid var(--color-orange);
+    border-right: 1px solid var(--color-orange);
+  }
+  .main__feedback .lineTop {
+    right: 1rem;
+  }
+  .main__feedback .lineBottom {
+    left: 1rem;
+    transform: rotate(180deg);
+    bottom: 0;
+  }
+  .main__feedback .main__feedback__content,
+.main__feedback .main__feedback__name,
+.main__feedback .main__feedback__description {
+    padding: 0 5rem;
+  }
+  .main__feedback .main__feedback__name,
+.main__feedback .main__feedback__description {
+    align-self: flex-end;
+  }
+  .main__feedback .main__feedback__content {
+    padding-top: 3.8rem;
+    padding-bottom: 2rem;
+  }
+  .main__feedback .main__feedback__navigation {
+    padding: 3.8rem 0 2.5rem 0;
+  }
+  .main__feedback .main__feedback__navItem {
+    font-size: 1.8rem;
+  }
+  .main__feedback .main__feedback__navItem:hover {
+    width: 60px;
+  }
+  .main__feedback .main__feedback__left,
+.main__feedback .main__feedback__right {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    border-bottom: 5px solid var(--color-gray-light);
+    border-left: 5px solid var(--color-gray-light);
+    border-bottom-left-radius: 3px;
+  }
+  .main__feedback .main__feedback__left {
+    position: absolute;
+    left: 1.5rem;
+    transform: rotate(50deg);
+  }
+  .main__feedback .main__feedback__right {
+    position: absolute;
+    right: 1.5rem;
+    transform: rotate(-135deg);
+  }
+  .main__feedback .main__feedback__navItem {
+    min-width: 45px;
+  }
+  .main__feedback .main__feedback--white {
+    width: 60px;
+  }
+  /*section methodology*/
+  .main__methodology {
+    order: 1;
+  }
+  .main__methodology .container {
+    padding-top: 5.4rem;
+    display: grid;
+    grid-template-areas: "titleMethod titleMethod buttonMethod" "titleMethod titleMethod ." "listMethod listMethod listMethod";
+  }
+  .main__methodology .main__methodology__title {
+    padding-left: 3.2rem;
+  }
+  .main__methodology .main__methodology__text {
+    max-width: 260px;
+    padding: 0 0 1rem 0rem;
+  }
+  .main__methodology .main__methodology__list {
+    padding-top: 4.5rem;
+    padding-bottom: 2.9rem;
+  }
+  .main__methodology .main__methodology__subtext {
+    font-size: 1.25rem;
+  }
+  .main__methodology .main__methodology__description {
+    padding: 0.9rem 0 0 0;
+  }
+  .main__methodology .main__methodology__group {
+    padding-top: 3.5rem;
+    justify-content: end;
+  }
+  /*section target*/
+  .main__target .square {
+    right: 7rem;
+  }
+  .main__target .main__target__title {
+    padding: 5.4rem 2rem 0.6rem 6.2rem;
+    font-size: 4rem;
+  }
+  .main__target .main__target__text {
+    font-size: 1.25rem;
+    padding: 0 6rem;
+  }
+  .main__target .main__target__group {
+    padding: 1.5rem 0 5rem 0;
+  }
+  .main__target .main__target__btnOne {
+    margin-right: 2rem;
+  }
+}
+@media only screen and (min-width: 1034px) {
+  /*section home*/
+  .main__home .main__home__title {
+    padding: 7.4rem auto 0 auto;
+  }
+  .main__home .main__home__group {
+    padding-bottom: 11.3rem;
+  }
+  /*section client*/
+  .main__client .container {
+    grid-template-areas: "titleClient cardClient" "buttonClient cardClient" "buttonClient cardClient";
+  }
+  .main__client .square {
+    margin-bottom: 6.7rem;
+  }
+  .main__client .main__client__title {
+    font-size: 4rem;
+    line-height: 5.3rem;
+    padding-left: 4.9rem;
+    top: 7.3rem;
+  }
+  .main__client .main__client__subtitle {
+    padding: 0 0 1.9rem 5rem;
+  }
+  .main__client article {
+    margin: 3.46rem auto 7.7rem auto;
+  }
+  .main__client .main__client__text {
+    padding-top: 1rem;
+    margin-bottom: 0rem;
+  }
+  .main__client .main__client__button {
+    display: grid;
+    margin-bottom: 4rem;
+    grid-template-areas: ". btnPriceClient" "btnLeftClient btnRightClient";
+  }
+  .main__client .main__client__price {
+    grid-area: btnPriceClient;
+    padding: 0 0 0.5rem 2rem;
+  }
+  .main__client button.main__client__btnOne {
+    grid-area: btnLeftClient;
+  }
+  .main__client button.main__client__btnTwo {
+    grid-area: btnRightClient;
+    margin: 0 0 0 2rem;
+  }
+  /*section shine*/
+  .main__shine {
+    padding: 8rem 0;
+  }
+  .main__shine .main__shine__title h2 {
+    font-size: 3rem;
+    line-height: 3.891rem;
+    margin-right: 31rem;
+    max-width: 706px;
+  }
+  .main__shine .main__shine__price {
+    margin: 2.5rem 0;
+    padding: 0 6rem;
+    font-size: 4rem;
+  }
+  /*section accordion*/
+  .main__accordion {
+    padding: 7.3rem 0;
+  }
+  .main__accordion label p {
+    padding: 1.67rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+    width: 460px;
+  }
+  .main__accordion label::after {
+    width: 71%;
+  }
+  .main__accordion .main__accordion__content {
+    width: calc(100% - 470px);
+  }
+  .main__accordion .main__accordion__group {
+    left: 460px;
+    justify-content: center;
+  }
+  /*section team*/
+  .main__team .main__team__title {
+    top: 7.4rem;
+    left: 4.2rem;
+  }
+  .main__team article {
+    padding-top: 4rem;
+  }
+  .main__team .main__team__card {
+    max-width: 350px;
+  }
+  .main__team .main__team__subtext {
+    padding-right: 0;
+  }
+  .main__team .main__team__group {
+    padding: 2.5rem 0 8rem 0;
+  }
+  /*section feedback*/
+  .main__feedback {
+    padding: 3rem 0;
+  }
+  .main__feedback .main__feedback__content {
+    padding-top: 9.2rem;
+    padding-bottom: 2.5rem;
+  }
+  .main__feedback .main__feedback__navigation {
+    padding: 3.7rem 0 8rem 0;
+  }
+  /*section methodology*/
+  .main__methodology .container {
+    padding-top: 7.2rem;
+    display: grid;
+    grid-template-areas: "titleMethod listMethod" "titleMethod listMethod" "buttonMethod listMethod";
+  }
+  .main__methodology .main__methodology__title {
+    padding-left: 5rem;
+  }
+  .main__methodology .main__methodology__text {
+    max-width: 320px;
+    padding-bottom: 1rem;
+  }
+  .main__methodology .main__methodology__subtext {
+    padding-right: 15rem;
+  }
+  .main__methodology .main__methodology__list {
+    padding-top: 2rem;
+    padding-bottom: 5.9rem;
+  }
+  .main__methodology .main__methodology__group {
+    padding-bottom: 4.1rem;
+    justify-content: start;
+    padding-left: 5rem;
+  }
+  .main__methodology .main__methodology__btnOne {
+    margin-right: 2rem;
+  }
+  /*section target*/
+  .main__target .main__target__title {
+    padding: 7.3rem 9rem 1.2rem 6.2rem;
+    max-width: 587px;
+    margin: 0 0 0 auto;
+  }
+  .main__target .main__target__text {
+    padding-left: 4rem;
+    max-width: 550px;
+    margin: 0 0 0 auto;
+  }
+  .main__target .main__target__group {
+    padding: 3.3rem 6.7rem 15rem 0rem;
+    justify-content: end;
+  }
+}
+footer > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ftr .ftr__logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+#ftr img {
+  margin: 0 1.2rem;
+}
+#ftr .ftr__title,
+#ftr .ftr__group {
+  text-transform: uppercase;
+}
+#ftr .ftr__title {
+  padding: 0 1rem 0.5rem 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+#ftr .ftr__group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 2.6rem;
+}
+#ftr .ftr__item {
+  padding: 0.2rem 1.3rem 0 1.3rem;
+}
+
+@media only screen and (min-width: 760px) {
+  #ftr img {
+    width: 32px;
+    height: 32px;
+  }
+  #ftr .ftr__title,
+#ftr .ftr__group {
+    text-transform: none;
+    font-size: 1.25rem;
+  }
+  #ftr .ftr__title {
+    padding-bottom: 0.15rem;
+  }
+}
+/*section modal*/
+.main__modal {
+  display: none;
+  background-color: rgba(44, 44, 44, 0.95);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.main__modal .container {
+  max-width: 614px;
+  min-height: 670px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: auto;
+}
+.main__modal .main__modal__close {
+  color: var(--color-gray-light);
+  align-self: flex-end;
+  font-size: 3.8rem;
+  font-weight: 100;
+  transform: scaleX(1.5);
+  padding-right: 0.6rem;
+}
+.main__modal .main__modal__close:hover {
+  color: var(--color-white);
+}
+.main__modal form {
+  padding: 0 3.4rem 2.5rem 3.4rem;
+  overflow: hidden;
+}
+.main__modal .input__modal__check,
+.main__modal #terms,
+.main__modal input.main__modal__button {
+  cursor: pointer;
+}
+.main__modal .main__modal__title {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--color-orange);
+  padding-bottom: 0.6rem;
+}
+.main__modal .main__modal__group {
+  position: relative;
+  margin: 1.5rem 0;
+}
+.main__modal input:not([type=checkbox]) {
+  color: var(--color-orange);
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 0.7rem 1.2rem;
+  border: 1px solid var(--color-orange);
+  outline: 1px solid var(--color-orange);
+  border-radius: 4px;
+}
+.main__modal label:not([for=terms]) {
+  color: var(--color-orange);
+  pointer-events: none;
+  border-bottom: 1px solid #ffffff;
+  left: 0;
+  bottom: 0;
+}
+.main__modal span {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1.3rem;
+  transition: all 0.3s ease;
+}
+.main__modal input:focus + label span,
+.main__modal input:valid + label span {
+  transform: translateY(-150%);
+  font-size: 0.8rem;
+  bottom: 0.2rem;
+  left: 0.2rem;
+  padding: 0 0.3rem;
+  text-shadow: 0.4px 0.4px #000;
+}
+.main__modal input:focus,
+.main__modal input:valid {
+  padding-top: 1.5rem;
+}
+.main__modal .main__modal__check {
+  display: inline-block;
+  color: var(--color-white);
+  margin-top: 0.5rem;
+}
+.main__modal .main__modal__check a {
+  color: var(--color-white);
+}
+.main__modal .main__modal__check a:hover {
+  text-decoration: underline;
+}
+.main__modal #terms {
+  border: 0;
+  position: relative;
+}
+.main__modal #terms::before,
+.main__modal #terms:checked::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.8rem;
+  height: 0.8rem;
+  top: 0;
+  left: 0;
+}
+.main__modal #terms::before {
+  background-color: #1a1a1a;
+  border: 1px solid var(--color-orange);
+}
+.main__modal #terms:checked::before {
+  background-color: var(--color-orange);
+}
+.main__modal #terms:checked::after {
+  content: "";
+  display: block;
+  width: 0.3rem;
+  height: 0.6rem;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0rem;
+  left: 0.24rem;
+}
+.main__modal .main__modal__terms {
+  display: inline-block;
+  position: relative;
+  left: 1.5rem;
+  bottom: 2rem;
+  margin-right: 2rem;
+}
+.main__modal input.main__modal__button {
+  text-transform: uppercase;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  margin-top: -0.7rem;
+}
+
+@media only screen and (min-width: 378px) {
+  /*section modal*/
+  .main__modal .main__modal__check {
+    margin-top: 0rem;
+  }
+  .main__modal .main__modal__terms {
+    margin-right: 0;
+    padding-left: 0.5rem;
+    position: static;
+  }
+  .main__modal input.main__modal__button {
+    margin-top: 1.3rem;
+  }
+}
+:root {
+  --color-gray: #B5B5B5;
+  --color-gray-light: #6E6E6E;
+  --color-gray-dark: #262626;
+  --color-orange: #F89D24;
+  --color-white: #FFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Yantramanav", sans-serif;
+  color: var(--color-white);
+  background-color: #000;
+}
+
+.main__feedback__left:hover,
+.main__feedback__right:hover {
+  border-color: var(--color-white);
+}
+
+button:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+h1,
+.main__client__title,
+.main__shine__title h2,
+.main__accordion__title,
+.main__team__title,
+.main__methodology__text,
+.main__target__title,
+.main__modal__title {
+  font-size: 2.85rem;
+  line-height: 3.875rem;
+  font-weight: bold;
+}
+
+.square {
+  width: 6.6rem;
+  height: 6.3rem;
+  border-right: 1px solid var(--color-orange);
+  border-bottom: 1px solid var(--color-orange);
+  border-left: 1px solid var(--color-orange);
+  margin-bottom: 6rem;
+  position: relative;
+}
+
+.container {
+  max-width: 330px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+#main .main__home {
+  background: linear-gradient(90deg, #1A1A1A 0%, #2C2C2C 100%);
+}
+
+#main .main__client,
+#main .main__team,
+#main .main__methodology,
+.main__modal .container {
+  background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
+}
+
+#main .main__client {
+  background: radial-gradient(50% 50% at 50% 50%, #2C2C2C 0%, #1A1A1A 100%);
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .main__shine {
+  background-image: url("../../image/bg_shine.webp");
+  background-repeat: repeat-x;
+}
+
+#main .main__accordion {
+  background-image: url("../../image/teacher_bnw.webp");
+  background-size: cover;
+  background-position: bottom left;
+}
+
+#main .main__feedback {
+  background-image: url("../../image/opiniao.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#main .main__target {
+  background-image: url("../../image/negociando.webp");
+  background-size: cover;
+  background-position: top;
+}
+
+@media only screen and (min-width: 760px) {
+  .container {
+    max-width: 720px;
+    padding: 0 1rem;
+  }
+  .square {
+    width: 9.5rem;
+    height: 9.4rem;
+  }
+}
+@media only screen and (min-width: 1034px) {
+  h1,
+.main__client__title,
+.main__shine__title h2,
+.main__accordion__title,
+.main__team__title,
+.main__methodology__text,
+.main__target__title {
+    font-size: 4rem;
+    line-height: 5.188rem;
+  }
+  .container {
+    max-width: 1120px;
+  }
+  .square {
+    width: 12.5rem;
+    height: 12.4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
