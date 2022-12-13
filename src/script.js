@@ -74,6 +74,33 @@ function clearFields(){
     });
 }
 
+document.querySelector('.main__modal__button').onclick = function(){
+    let nome = document.querySelector('#nome');
+    let tel = document.querySelector('#telefone');
+    let email = document.querySelector('#email');
+    let job = document.querySelector('#profissao');
+    let terms = document.querySelector('#terms');
+    if(nome.value == ''){
+        alert('Nome vazio! \nPreencha e envie novamente');
+        nome.focus();
+    }else if(tel.value == ''){
+        alert('Telefone vazio! \nPreencha e envie novamente');
+        tel.focus();
+    }else if(email.value == ''){
+        alert('Email vazio! \nPreencha e envie novamente');
+        email.focus();
+    }else if(job.value == ''){
+        alert('Profissão vazia! \nPreencha e envie novamente');
+        job.focus();
+    }else if(terms.checked == false){
+        alert('Para continuar é preciso aceitar os termos de uso! \nPreencha e envie novamente');
+        terms.focus();
+    }else{
+        alert('Dados enviados com sucesso!');
+        clearFields();
+    }
+};
+
 // Mask tel
 const handlePhone = (event) => {
     let input = event.target;
@@ -138,3 +165,6 @@ form.addEventListener("submit", (event) => {
         .then(json => console.log(json));
 })
 // npm run build
+
+/* Adicionar uma variável que terá o papel de ver o estado, 
+ * inicialmente teria que verificar o email, e verificar se está em branco*/
