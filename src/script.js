@@ -49,6 +49,18 @@ arrayBtn.push(document.getElementsByClassName('main__target__btnOne')[0])
 arrayBtn.push(document.getElementsByClassName('main__methodology__btnOne')[0]);;
 let span = document.getElementsByClassName('main__modal__close')[0];
 
+function clearFields(){
+    let fields = document.querySelectorAll('.main__modal__group > input');
+    fields.forEach(function(item){
+        item.value = '';
+    });
+}
+
+function closeModal(){
+    modal.style.display = "none";
+    clearFields();
+}
+
 arrayBtn.forEach(function(value){
     value.onclick = function() {
         modal.style.display = "flex";
@@ -56,22 +68,13 @@ arrayBtn.forEach(function(value){
 });
 
 span.onclick = function() {
-    modal.style.display = "none";
-    clearFields();
+    closeModal();
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal.style.display = "none";
-        clearFields();
+        closeModal();
     }
-}
-
-function clearFields(){
-    let fields = document.querySelectorAll('.main__modal__group > input');
-    fields.forEach(function(item){
-        item.value = '';
-    });
 }
 
 document.querySelector('.main__modal__button').onclick = function(){
@@ -97,7 +100,7 @@ document.querySelector('.main__modal__button').onclick = function(){
         terms.focus();
     }else{
         alert('Dados enviados com sucesso!');
-        clearFields();
+        closeModal();
     }
 };
 
@@ -165,6 +168,3 @@ form.addEventListener("submit", (event) => {
         .then(json => console.log(json));
 })
 // npm run build
-
-/* Adicionar uma variável que terá o papel de ver o estado, 
- * inicialmente teria que verificar o email, e verificar se está em branco*/
