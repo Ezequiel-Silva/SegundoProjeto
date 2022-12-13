@@ -57,18 +57,27 @@ arrayBtn.forEach(function(value){
 
 span.onclick = function() {
     modal.style.display = "none";
+    clearFields();
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        clearFields();
     }
+}
+
+function clearFields(){
+    let fields = document.querySelectorAll('.main__modal__group > input');
+    fields.forEach(function(item){
+        item.value = '';
+    });
 }
 
 // Mask tel
 const handlePhone = (event) => {
-    let input = event.target
-    input.value = phoneMask(input.value)
+    let input = event.target;
+    input.value = phoneMask(input.value);
 }
 
 const phoneMask = (value) => {
@@ -76,7 +85,56 @@ const phoneMask = (value) => {
     value = value.replace(/\D/g,'')
     value = value.replace(/(\d{2})(\d)/,"($1) $2")
     value = value.replace(/(\d)(\d{4})$/,"$1-$2")
-    return value
+    return value;
 }
 
+// Valid email
+function validacaoEmail(field) {
+    usuario = field.value.substring(0, field.value.indexOf("@"));
+    dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
+    let label = document.querySelector('[for="email"]');
+    if ((usuario.length >= 1) &&
+        (dominio.length >= 3) &&
+        (usuario.search("@") == -1) &&
+        (dominio.search("@") == -1) &&
+        (usuario.search(" ") == -1) &&
+        (dominio.search(" ") == -1) &&
+        (dominio.search(".") != -1) &&
+        (dominio.indexOf(".") >= 1) &&
+        (dominio.lastIndexOf(".") < dominio.length - 1)) {
+        console.log("E-mail valido");
+        field.style.outlineColor = "var(--color-orange)";
+        label.style.color = "var(--color-orange)";
+    }
+    else {
+        console.log("E-mail invalido");
+        field.style.outlineColor = "#F22";
+        label.style.color = "#F22";
+        field.focus();
+    }
+}
+
+// AJAX
+let form = document.querySelector('[name="form__modal"]');
+form.addEventListener("submit", (event) => {
+    event.preventDefault(); //Página não atualiza 
+    let nome = document.querySelector('#nome').value;
+    let tel = document.querySelector('#telefone').value;
+    let email = document.querySelector('#email').value;
+    let job = document.querySelector('#profissao').value;
+    let bodyField = `${email} , ${job} , ${tel}`;
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+            title: nome,
+            body: bodyField,
+            userId: 1,
+        }),
+        headers: {
+            'Content-type': 'aplication/json; charset=UTF-8',
+        },
+    })
+        .then(response => response.json())
+        .then(json => console.log(json));
+})
 // npm run build

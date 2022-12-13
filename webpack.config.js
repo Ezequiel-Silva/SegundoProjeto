@@ -1,6 +1,5 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const PATH = {
     dist: path.resolve(__dirname, "./dist")
 };
@@ -41,3 +40,4 @@ module.exports = {
         })
     ]
 };
+//npm run build

@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-11LGEJ9RT2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-11LGEJ9RT2');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F89D24"/>
     <title>Onboard2</title>
+    <link rel="apple-touch-icon" href="image/logo_simbolo_laranja.webp">
     <link rel="icon" href="image/logo_simbolo_laranja.webp" type="imagem/svg">
     <link rel="stylesheet" href="assets/scss/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -386,7 +397,7 @@
         <section class="main__modal">
             <div class="container">
                 <a title="Fechar" href="#" class="main__modal__close">x</a>
-                <form method="post" action="">
+                <form name="form__modal" method="post" action="">
                     <h2 class="main__modal__title">Lorem</h2>
                     <p class="main__modal__description">Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit, sed do eiusmod tempor incididunt 
@@ -400,14 +411,14 @@
                     </div>
                     <div class="main__modal__group">
                         <input aria-label="Campo para preencher telefone" id="telefone" name="telefone_cad" 
-                        autocomplete="off" required="required" type="tel"maxlength="15" onkeyup="handlePhone(event)">
+                        autocomplete="off" required="required" type="tel" maxlength="15" onkeyup="handlePhone(event)">
                         <label for="telefone">
                             <span>Telefone</span>
                         </label>
                     </div>
                     <div class="main__modal__group">
                         <input aria-label="Campo para preencher email" id="email" name="email_cad" 
-                        autocomplete="off" required="required" type="email">
+                        autocomplete="off" required="required" type="text" onblur="validacaoEmail(form__modal.email_cad)">
                         <label for="email">
                             <span>Email</span>
                         </label> 
