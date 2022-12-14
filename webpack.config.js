@@ -7,12 +7,9 @@ const PATH = {
 module.exports = {
     mode: 'production',
     // mode: 'development',
-    entry: {
-        app: './src/script.js', 
-        bdJson: './db.json',
-    },
+    entry: './src/script.js',
     output: {
-        filename: 'assets/js/[name]'+'.bundle.'+'[ext]',
+        filename: 'assets/js/[name].bundle.js',
         path: PATH.dist
     },
     module: {
@@ -22,6 +19,20 @@ module.exports = {
                 type: "asset/resource",
                 generator:{
                     filename: 'image/[name][ext]'
+                }
+            },
+            {
+                test: /\.json$/i,
+                type: "asset/resource",
+                generator: {
+                    filename: './[name].json'
+                }
+            },
+            {
+                test: /\.json$/i,
+                type: "asset/resource",
+                generator: {
+                    filename: './[name].json'
                 }
             },
             { 
