@@ -7,9 +7,12 @@ const PATH = {
 module.exports = {
     mode: 'production',
     // mode: 'development',
-    entry: './src/script.js',
+    entry: {
+        app: './src/script.js', 
+        bdJson: './db.json',
+    },
     output: {
-        filename: 'assets/js/[name].bundle.js',
+        filename: 'assets/js/[name]'+'.bundle.'+'[ext]',
         path: PATH.dist
     },
     module: {

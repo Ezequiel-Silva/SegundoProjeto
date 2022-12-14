@@ -77,7 +77,9 @@ window.onclick = function(event) {
     }
 }
 
-document.querySelector('.main__modal__button').onclick = function(){
+document.querySelector('.main__modal__button').addEventListener('click', validateData);
+
+function validateData(){
     let nome = document.querySelector('#nome');
     let tel = document.querySelector('#telefone');
     let email = document.querySelector('#email');
@@ -85,21 +87,22 @@ document.querySelector('.main__modal__button').onclick = function(){
     let terms = document.querySelector('#terms');
     if(nome.value == ''){
         alert('Nome vazio! \nPreencha e envie novamente');
-        nome.focus();
+        // nome.focus();
     }else if(tel.value == ''){
         alert('Telefone vazio! \nPreencha e envie novamente');
-        tel.focus();
+        // tel.focus();
     }else if(email.value == ''){
         alert('Email vazio! \nPreencha e envie novamente');
-        email.focus();
+        // email.focus();
     }else if(job.value == ''){
         alert('Profissão vazia! \nPreencha e envie novamente');
-        job.focus();
+        // job.focus();
     }else if(terms.checked == false){
         alert('Para continuar é preciso aceitar os termos de uso! \nPreencha e envie novamente');
         terms.focus();
     }else{
         alert('Dados enviados com sucesso!');
+        sendData();
         closeModal();
     }
 };
@@ -144,27 +147,30 @@ function validacaoEmail(field) {
     }
 }
 
+// npm run build
+
 // AJAX
-let form = document.querySelector('[name="form__modal"]');
-form.addEventListener("submit", (event) => {
-    event.preventDefault(); //Página não atualiza 
-    let nome = document.querySelector('#nome').value;
+function sendData(){
+    let URL = 'http://localhost:3000';
+    let name = document.querySelector('#nome').value;
     let tel = document.querySelector('#telefone').value;
     let email = document.querySelector('#email').value;
     let job = document.querySelector('#profissao').value;
-    let bodyField = `${email} , ${job} , ${tel}`;
-    fetch('https://jsonplaceholder.typicode.com/posts', {
+    fetch(`${URL}/usuarios`, {
+        headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+        },
         method: 'POST',
         body: JSON.stringify({
-            title: nome,
-            body: bodyField,
-            userId: 1,
+            name: name,
+            tel: tel,
+            email: email,
+            job: job
         }),
-        headers: {
-            'Content-type': 'aplication/json; charset=UTF-8',
-        },
     })
         .then(response => response.json())
         .then(json => console.log(json));
-})
-// npm run build
+}
+
+//Ga 4
