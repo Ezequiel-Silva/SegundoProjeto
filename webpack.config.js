@@ -25,14 +25,14 @@ module.exports = {
                 test: /\.json$/i,
                 type: "asset/resource",
                 generator: {
-                    filename: './[name].json'
+                    filename: './[name].bundle.json'
                 }
             },
             {
                 test: /\.json$/i,
                 type: "asset/resource",
                 generator: {
-                    filename: './[name].json'
+                    filename: './[name].bundle.json'
                 }
             },
             { 

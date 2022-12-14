@@ -1,5 +1,5 @@
-// import './assets/scss/style.scss';
-// import './db.json';
+import './assets/scss/style.scss';
+import './db.json';
 
 // import "./image/Facebook.webp";
 // import "./image/instagram.webp";
