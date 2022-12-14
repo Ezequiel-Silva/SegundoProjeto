@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack -w",
-    "build": "webpack -w & json-server --watch 'dist/db.bundle.json'" 
+    "wp": "webpack -w",
+    "build": "webpack && json-server --watch dist/db.bundle.json" 
   },
   "repository": {
     "type": "git",

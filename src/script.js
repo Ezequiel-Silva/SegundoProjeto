@@ -1,14 +1,14 @@
 import './assets/scss/style.scss';
 import './db.json';
 
-// import "./image/Facebook.webp";
-// import "./image/instagram.webp";
-// import "./image/logo_simbolo_laranja.webp";
-// import "./image/oratoria_digital_logo.webp";
-// import "./image/retangulo.webp";
-// import "./image/seta.webp";
-// import "./image/Twitter.webp";
-// import "./image/Whatsapp.webp";
+import "./image/Facebook.webp";
+import "./image/instagram.webp";
+import "./image/logo_simbolo_laranja.webp";
+import "./image/oratoria_digital_logo.webp";
+import "./image/retangulo.webp";
+import "./image/seta.webp";
+import "./image/Twitter.webp";
+import "./image/Whatsapp.webp";
 
 //Slider
 let slideIndex = 1;
