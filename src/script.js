@@ -107,12 +107,15 @@ function validateData(){
 };
 
 // Mask tel
-document.getElementById('telefone').addEventListener('keyup', handlePhone);
-function handlePhone() {
-    phoneMask(document.getElementById('telefone').value);
-}
+document.getElementById('telefone').addEventListener('keyup', () => {
+    phoneMask();
+});
+// function handlePhone() {
+//     phoneMask(document.getElementById('telefone').value);
+// }
 
-function phoneMask(value) {
+function phoneMask() {
+    let value = document.getElementById('telefone').target.value;
     if (!value) return ""
     value = value.replace(/\D/g,'')
     value = value.replace(/(\d{2})(\d)/,"($1) $2")
@@ -121,8 +124,9 @@ function phoneMask(value) {
 }
 
 // Valid email
-document.getElementById('email').addEventListener('click', validacaoEmail(form__modal.email_cad)); 
-function validacaoEmail(field) {
+document.getElementById('email').onblur = () => validacaoEmail(); 
+function validacaoEmail() {
+    let field = document.getElementById('email');
     usuario = field.value.substring(0, field.value.indexOf("@"));
     dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
     let label = document.querySelector('[for="email"]');
