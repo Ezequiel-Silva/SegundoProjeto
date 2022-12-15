@@ -5,8 +5,8 @@ const PATH = {
 };
 
 module.exports = {
-    mode: 'production',
-    // mode: 'development',
+    // mode: 'production',
+    mode: 'development',
     entry: './src/script.js',
     output: {
         filename: 'assets/js/[name].bundle.js',

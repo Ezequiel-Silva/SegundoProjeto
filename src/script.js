@@ -1,27 +1,27 @@
-import './assets/scss/style.scss';
-import './db.json';
+// import './assets/scss/style.scss';
+// import './db.json';
 
-import "./image/Facebook.webp";
-import "./image/instagram.webp";
-import "./image/logo_simbolo_laranja.webp";
-import "./image/oratoria_digital_logo.webp";
-import "./image/retangulo.webp";
-import "./image/seta.webp";
-import "./image/Twitter.webp";
-import "./image/Whatsapp.webp";
+// import "./image/Facebook.webp";
+// import "./image/instagram.webp";
+// import "./image/logo_simbolo_laranja.webp";
+// import "./image/oratoria_digital_logo.webp";
+// import "./image/retangulo.webp";
+// import "./image/seta.webp";
+// import "./image/Twitter.webp";
+// import "./image/Whatsapp.webp";
 
 //Slider
 let slideIndex = 1;
 
 showDivs(slideIndex);
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
+document.querySelector('.main__feedback__left').addEventListener('click', () => showDivs(slideIndex += (-1)));
+document.querySelector('.main__feedback__right').addEventListener('click', () => showDivs(slideIndex += 1));
+let navItem = document.querySelectorAll('.main__feedback__navItem');
 
-function currentDiv(n) {
-    showDivs(slideIndex = n);
-}
+navItem.forEach((num, index) => {
+    num.addEventListener('click', () => showDivs(slideIndex = index + 1));
+});
 
 function showDivs(n) {
     let i;
@@ -40,7 +40,7 @@ function showDivs(n) {
 }
 
 // Modal
-let modal = document.getElementsByClassName('main__modal')[0];
+const modal = document.getElementsByClassName('main__modal')[0];
 let arrayBtn = [];
 arrayBtn.push(document.getElementsByClassName('main__home__btnOne')[0]);
 arrayBtn.push(document.getElementsByClassName('main__client__btnOne')[0]);
@@ -48,7 +48,7 @@ arrayBtn.push(document.getElementsByClassName('main__accordion__btnOne')[0]);
 arrayBtn.push(document.getElementsByClassName('main__team__btnOne')[0]);
 arrayBtn.push(document.getElementsByClassName('main__target__btnOne')[0])
 arrayBtn.push(document.getElementsByClassName('main__methodology__btnOne')[0]);;
-let span = document.getElementsByClassName('main__modal__close')[0];
+const span = document.getElementsByClassName('main__modal__close')[0];
 
 function clearFields(){
     let fields = document.querySelectorAll('.main__modal__group > input');
@@ -68,11 +68,9 @@ arrayBtn.forEach(function(value){
     }
 });
 
-span.onclick = function() {
-    closeModal();
-}
+span.onclick = () => closeModal();
 
-window.onclick = function(event) {
+window.onclick = (event) => {
     if (event.target == modal) {
         closeModal();
     }
@@ -109,12 +107,12 @@ function validateData(){
 };
 
 // Mask tel
-const handlePhone = (event) => {
-    let input = event.target;
-    input.value = phoneMask(input.value);
+document.getElementById('telefone').addEventListener('keyup', handlePhone);
+function handlePhone() {
+    phoneMask(document.getElementById('telefone').value);
 }
 
-const phoneMask = (value) => {
+function phoneMask(value) {
     if (!value) return ""
     value = value.replace(/\D/g,'')
     value = value.replace(/(\d{2})(\d)/,"($1) $2")
@@ -123,6 +121,7 @@ const phoneMask = (value) => {
 }
 
 // Valid email
+document.getElementById('email').addEventListener('click', validacaoEmail(form__modal.email_cad)); 
 function validacaoEmail(field) {
     usuario = field.value.substring(0, field.value.indexOf("@"));
     dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
@@ -151,7 +150,7 @@ function validacaoEmail(field) {
 // npm run build
 
 // AJAX
-function sendData(){
+function sendData() {
     let URL = 'http://localhost:3000';
     let name = document.querySelector('#nome').value;
     let tel = document.querySelector('#telefone').value;
