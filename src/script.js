@@ -1,9 +1,9 @@
 import './assets/scss/style.scss';
 import './db.json';
 
+import "./image/logo_simbolo_laranja.webp";
 import "./image/Facebook.webp";
 import "./image/instagram.webp";
-import "./image/logo_simbolo_laranja.webp";
 import "./image/oratoria_digital_logo.webp";
 import "./image/retangulo.webp";
 import "./image/seta.webp";

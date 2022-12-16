@@ -8,13 +8,13 @@ module.exports = {
     mode: 'production',
     // mode: 'development',
     entry: './src/script.js',
+    devtool: 'source-map',
     output: {
         filename: './[name].bundle.js',
         path: PATH.dist
     },
     module: {
         rules: [
-            { test: /\.css$/i, use: ['style-loader', 'css-loader'] },
             {
                 test: /\.(png|jpg|jpeg|gif|webp|svg)$/i,
                 type: "asset/resource",
@@ -22,6 +22,12 @@ module.exports = {
                     filename: 'image/[name][ext]',
                 }
             },
+            { 
+                test: /\.js$/, 
+                enforce: 'pre', 
+                use: [ 'source-map-loader' ]
+            },
+            { test: /\.css$/i, use: ['style-loader', 'css-loader'] },
             {
                 test: /\.json$/i,
                 type: "asset/resource",
@@ -45,7 +51,7 @@ module.exports = {
     plugins: [
         new htmlWebpackPlugin({
             template: './src/index.html'
-        })
-    ]
+        }),
+    ],
 };
 //npm run build
