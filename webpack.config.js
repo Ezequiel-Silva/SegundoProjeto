@@ -5,34 +5,28 @@ const PATH = {
 };
 
 module.exports = {
-    // mode: 'production',
-    mode: 'development',
+    mode: 'production',
+    // mode: 'development',
     entry: './src/script.js',
     output: {
-        filename: 'assets/js/[name].bundle.js',
+        filename: './[name].bundle.js',
         path: PATH.dist
     },
     module: {
         rules: [
+            { test: /\.css$/i, use: ['style-loader', 'css-loader'] },
             {
                 test: /\.(png|jpg|jpeg|gif|webp|svg)$/i,
                 type: "asset/resource",
                 generator:{
-                    filename: 'image/[name][ext]'
+                    filename: 'image/[name][ext]',
                 }
             },
             {
                 test: /\.json$/i,
                 type: "asset/resource",
                 generator: {
-                    filename: './[name].bundle.json'
-                }
-            },
-            {
-                test: /\.json$/i,
-                type: "asset/resource",
-                generator: {
-                    filename: './[name].bundle.json'
+                    filename: './[name].bundle.json',
                 }
             },
             { 
@@ -50,7 +44,7 @@ module.exports = {
     },
     plugins: [
         new htmlWebpackPlugin({
-            template: 'src/index.html'
+            template: './src/index.html'
         })
     ]
 };

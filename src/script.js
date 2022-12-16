@@ -1,16 +1,28 @@
-// import './assets/scss/style.scss';
-// import './db.json';
+import './assets/scss/style.scss';
+import './db.json';
 
-// import "./image/Facebook.webp";
-// import "./image/instagram.webp";
-// import "./image/logo_simbolo_laranja.webp";
-// import "./image/oratoria_digital_logo.webp";
-// import "./image/retangulo.webp";
-// import "./image/seta.webp";
-// import "./image/Twitter.webp";
-// import "./image/Whatsapp.webp";
+import "./image/Facebook.webp";
+import "./image/instagram.webp";
+import "./image/logo_simbolo_laranja.webp";
+import "./image/oratoria_digital_logo.webp";
+import "./image/retangulo.webp";
+import "./image/seta.webp";
+import "./image/Twitter.webp";
+import "./image/Whatsapp.webp";
 
-//Slider
+function docReady(fn) {
+    /* see if DOM is already available */
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        /* call on next available tick */
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}   
+
+docReady(() => {
+console.log('Está funcionando');
+/*Slider*/
 let slideIndex = 1;
 
 showDivs(slideIndex);
@@ -39,7 +51,7 @@ function showDivs(n) {
     dots[slideIndex - 1].className += " main__feedback--white";
 }
 
-// Modal
+/*Modal*/
 const modal = document.getElementsByClassName('main__modal')[0];
 let arrayBtn = [];
 arrayBtn.push(document.getElementsByClassName('main__home__btnOne')[0]);
@@ -86,16 +98,16 @@ function validateData(){
     let terms = document.querySelector('#terms');
     if(nome.value == ''){
         alert('Nome vazio! \nPreencha e envie novamente');
-        // nome.focus();
+        nome.focus();
     }else if(tel.value == ''){
         alert('Telefone vazio! \nPreencha e envie novamente');
-        // tel.focus();
+        tel.focus();
     }else if(email.value == ''){
         alert('Email vazio! \nPreencha e envie novamente');
-        // email.focus();
+        email.focus();
     }else if(job.value == ''){
         alert('Profissão vazia! \nPreencha e envie novamente');
-        // job.focus();
+        job.focus();
     }else if(terms.checked == false){
         alert('Para continuar é preciso aceitar os termos de uso! \nPreencha e envie novamente');
         terms.focus();
@@ -106,19 +118,21 @@ function validateData(){
     }
 };
 
-// Mask tel
+/*Mask tel*/
+let v_obj;
+let v_fun;
 function mascara(o,f){
     v_obj=o
     v_fun=f
-    setTimeout("execmascara()",1)
+    setTimeout(execmascara,1)
 }
 function execmascara(){
     v_obj.value=v_fun(v_obj.value)
 }
 function mtel(v){
-    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
-    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
-    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+    v=v.replace(/\D/g,""); /*Remove tudo o que não é dígito*/
+    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); /*Coloca parênteses em volta dos dois primeiros dígitos*/
+    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); /*Coloca hífen entre o quarto e o quinto dígitos*/
     return v;
 }
 function id( el ){
@@ -130,12 +144,12 @@ window.onload = function(){
 	}
 }
 
-// Valid email
+/*Valid email*/
 document.getElementById('email').onblur = () => validacaoEmail(); 
 function validacaoEmail() {
     let field = document.getElementById('email');
-    usuario = field.value.substring(0, field.value.indexOf("@"));
-    dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
+    let usuario = field.value.substring(0, field.value.indexOf("@"));
+    let dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
     let label = document.querySelector('[for="email"]');
     if ((usuario.length >= 1) &&
         (dominio.length >= 3) &&
@@ -158,9 +172,9 @@ function validacaoEmail() {
     }
 }
 
-// npm run build
+/* npm run build */
 
-// AJAX
+/*AJAX*/
 function sendData() {
     let URL = 'http://localhost:3000';
     let name = document.querySelector('#nome').value;
@@ -184,4 +198,6 @@ function sendData() {
         .then(json => console.log(json));
 }
 
-//Ga 4
+/*Ga 4*/
+});
+

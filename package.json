@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wp": "webpack -w",
-    "build": "webpack && json-server --watch dist/db.bundle.json" 
+    "build": "webpack && json-server --watch dist/db.bundle.json"
   },
   "repository": {
     "type": "git",
