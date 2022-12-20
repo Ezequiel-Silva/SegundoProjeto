@@ -238,7 +238,7 @@
         top: 2.6rem;
         left: 0.5rem;
     }
-    article{
+    .main__team__cardGroup{
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -594,7 +594,7 @@
             top: 5.4rem;
             left: 3.2rem;
         }
-        article{
+        .main__team__cardGroup{
             justify-content: space-between;
             margin: 0 0 1.3rem 0;
         }
@@ -844,7 +844,7 @@
             top: 7.4rem;
             left: 4.2rem;
         }
-        article{
+        .main__team__cardGroup{
             padding-top: 4rem;
         }
         .main__team__card{
