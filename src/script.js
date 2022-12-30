@@ -69,16 +69,16 @@ docReady(() => {
         });
     }
 
+    arrayBtn.forEach(function(value){
+        value.onclick = function() {
+            modal.style.display = "flex";
+        }
+    });
+
     function closeModal() {
         modal.style.display = "none";
         clearFields();
     }
-
-    arrayBtn.forEach(function (value) {
-        value.onclick = function () {
-            modal.style.display = "flex";
-        }
-    });
 
     span.onclick = () => closeModal();
 

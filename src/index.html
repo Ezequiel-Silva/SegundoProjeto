@@ -3,22 +3,14 @@
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-11LGEJ9RT2"></script>
     <script type="text/javascript">
-        /* Google Tag Manager */
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-P2KLC83');
+        /* Google Tag Manager
+        (function (w, d, s, l, i) {w[l] = w[l] || []; w[l].push({'gtm.start':new Date().getTime(), event: 'gtm.js'}); var f = d.getElementsByTagName(s)[0],j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src ='https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);})(window, document, 'script', 'dataLayer', 'GTM-P2KLC83');*/
         /* Google Analytics 4 */
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         // gtag('event', 'page_view', { 'send_to': 'G-11LGEJ9RT2' });
-        gtag('config', 'G-11LGEJ9RT2');
+        gtag('config', 'G-11LGEJ9RT2'); 
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,17 +27,19 @@
     content="Tem interesse de alavancar sua carreira na tecnologia, venha conhecer nossas ofertas da Black Friday!">
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) 
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2KLC83" height="0" width="0"
             style="display:none;visibility:hidden">
         </iframe>
-    </noscript>
+    </noscript>--> 
     
     <header id="hder">
         <nav class="container">
             <ul>
                 <li> <img src="image/logo_simbolo_laranja.webp"
+                    width="110px"
+                    height="90px"
                         alt="Símbolo do infinito, laranja e amarelo, representando a logo da empresa."></img> </li>
             </ul>
         </nav>
@@ -206,7 +200,7 @@
                 <div class="square">
                     <h2 class="main__team__title">Nossos Professores</h2>
                 </div>
-                <article class="main__team__cardGroup">
+                <div class="main__team__cardGroup">
                     <article class="main__team__card">
                         <img width="264px" height="187px" src="image/retangulo.webp" alt="Imagem do fulano de tal">
                         <h3 class="main__team__text">Fulano de tal, 
@@ -272,7 +266,7 @@
                             Iaculis urna id volutpat lacus laoreet. 
                             Mauris vitae ultricies</p>
                     </article>
-                </article>
+                </div>
                 <div class="main__team__group">
                     <button type="button" class="main__team__btnOne">tenho interesse</button>
                     <button type="button" class="main__team__btnTwo">comprar agora</button>
