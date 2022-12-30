@@ -42,6 +42,8 @@
 }
 /*section home*/
 .main__home {
+    min-height: 659px;
+    height: calc(100vh - 121px);
     .main__home__subtitle,
     .main__home__title {
         text-align: center;
@@ -429,6 +431,7 @@
     }
     /*section home*/
     .main__home {
+        min-height: 544px;
         .main__home__title {
             margin: 0 auto;
             padding-top: 5.8rem;
