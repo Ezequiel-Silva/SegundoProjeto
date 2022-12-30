@@ -7,8 +7,8 @@ const PATH = {
 
 module.exports = {
     devtool: 'source-map',
-    // mode: 'production',
-    mode: 'development',
+    mode: 'production',
+    // mode: 'development',
     entry: './src/script.js',
     output: {
         filename: './[name].bundle.js',
